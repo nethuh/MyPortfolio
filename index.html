@@ -5,7 +5,7 @@
     <title>My Web Site</title>
     <link rel="stylesheet" href="Style.css">
     <meta charset="UTF-8">
-    <base href="localhost">
+<!--    <base href="localhost">-->
     <meta name="keywords" content="IJSE, GDSE, Sri Lanka, CMJD, RWAD">
     <meta name="description" content="This is for testing my web">
     <meta name="author" content="Sayani Nethmi">
@@ -16,14 +16,18 @@
 <body>
 <br>
     <header>
-        <h4>Sayani Nethmi</h4>
-        <nav>Home</nav>
-        <nav>About</nav>
-        <nav>Education</nav>
-        <nav>Skills</nav>
-        <nav>Project</nav>
-        <nav>Contact</nav>
+        <div class="banner">
+            <div class="navbar">
+                <h4>Sayani Nethmi</h4>
+                <nav><a href="#home">Home</a></nav>
+                <nav><a href="#about"> About</a></nav>
+                <nav>Education</nav>
+                <nav>Skills</nav>
+                <nav>Project</nav>
+                <nav>Contact</nav>
+                </div>
         <hr>
+        </div>
     </header>
     <main>
         <section>
@@ -43,7 +47,7 @@
         </section>
 
         <section>
-            <h1>About</h1>
+            <h1><a id="about">About</a> </h1>
          <!--<aside><img src="Frame%2014.png" alt="" height="100" width="50" align="left"></aside>
             <br>
             <aside><img src="About.png" alt="" height="200" width="150" align="left"></aside>-->
@@ -95,7 +99,7 @@
 
         <footer>
             <section>
-                <h1>Contact</h1>
+                <h1><a id="home">Contact</a></h1>
                 <section>
                     <h1></h1>
                     <h2></h2>
