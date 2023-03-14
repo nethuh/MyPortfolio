@@ -143,18 +143,31 @@ main{
     box-shadow: rgba(241, 228, 6, 0.2) 0px 7px 29px 0px;
     transform: scale(1.05);
 }
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.7s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+
+}
 /*----------about--------*/
 #about > h1{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
-    font-size: 25px;
-    margin-top: 300px;
+    font-size: 40px;
+    margin-top:800px;
 }
 
 #about > div{
     margin-top: 0px;
-    margin-left: 150px;
+    margin-left: 700px;
 }
 
 #about >img{
@@ -170,9 +183,15 @@ main{
     padding-top: 260px;
     font-family: 'Poppins', sans-serif;
 }
-
+#about > section > aside {
+    height: 700px;
+    width: 700px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    border-radius: 10%;
+}
 #about > article > button{
-    background-color: #00D2D3;
+    background-color: #EBE322;
     border: none;
     color: white;
     padding: 6px 60px;
