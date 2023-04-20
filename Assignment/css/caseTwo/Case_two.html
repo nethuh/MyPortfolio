@@ -10,7 +10,15 @@
         header{
             background: white;
             box-shadow: 1px 1px 3px 2px;
-            position: relative;
+            position: fixed;
+            border: solid black 1px;
+            top: 0;
+            width: 1550px;
+            z-index: 3 ;
+        }
+        body>main{
+            margin-top: 50px;
+            z-index: 4;
         }
         header>img{
             height: 50px;
@@ -25,8 +33,8 @@
 
         header>nav>ul>li{
             display: inline-block;
-            margin-left: 20px;
-            margin-right: 10px;
+            margin-left: 10px;
+            margin-right: 20px;
         }
 
         main>nav>ul>li{
@@ -37,10 +45,11 @@
         }
         main>section>section>div>nav>ul>h4>li{
             padding-top: 20px;
+            color: white;
         }
 
         main>section>section>div{
-            height: 674px;
+            height: 800px;
             width: 300px;
             background-color: purple;
             border: solid black 1px;
@@ -54,26 +63,27 @@
 
         }
 
+
         #div1>img{
             height: 300px;
-            width: 300px;
+            width: 250px;
             position: absolute;
-            left: 330px;
+            left: 350px;
 
         }
 
         #div2>img {
             height: 300px;
-            width: 300px;
+            width: 250px;
             position: absolute;
-            left: 700px;
+            left: 750px;
         }
 
         #div3>img{
             height: 300px;
-            width: 300px;
+            width: 250px;
             position: absolute;
-            left: 1100px;
+            left: 1150px;
 
         }
         footer{
@@ -81,11 +91,25 @@
             position: absolute;
             border: solid black 1px;
             width: 100%;
-            top: 93%;
+            top: 110%;
             text-align: center;
         }
 
+        /*#chatbox{*/
+        /*  width: 200px;*/
+        /*    height: 50px;*/
+        /*    background-color: cornflowerblue;*/
+        /*    text-align: center;*/
+        /*    color: white;*/
+        /*    position: fixed;*/
+        /*    right: 0;*/
+        /*    top: 0;*/
+        /*}*/
+        header>nav>ul>li{
+            color: red;
+        }
     </style>
+    <link rel="stylesheet" href="../normalize.css">
 
 </head>
 <body>
@@ -117,9 +141,9 @@
 
             </div>
         </section>
-        <div id="div1"><img src="assets/images-removebg-preview%20(2).png"></div>
-        <div id="div2"><img src="assets/images-removebg-preview%20(2).png"></div>
-        <div id="div3"><img src="assets/images-removebg-preview%20(2).png"></div>
+        <div id="div1"><img src="assets/images-removebg-preview%20(3).png"></div>
+        <div id="div2"><img src="assets/images-removebg-preview%20(3).png"></div>
+        <div id="div3"><img src="assets/images-removebg-preview%20(3).png"></div>
         <section id="sec1">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt.
                 Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit
@@ -135,12 +159,21 @@
             <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
                 consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
                 quam recusandae sequi voluptatibus.</p>
+            <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
+                consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
+                quam recusandae sequi voluptatibus.</p>
+            <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
+                consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
+                quam recusandae sequi voluptatibus.</p>
         </section>
     </section>
 </main>
 <footer>
     <p>Developed By IJSE</p>
 </footer>
+<!--<div id="chatbox">-->
+
+</div>
 </body>
 </html>
 
