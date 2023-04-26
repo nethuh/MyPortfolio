@@ -161,7 +161,7 @@ main{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 50px;
     margin-top:800px;
 }
 
@@ -171,55 +171,42 @@ main{
 }
 
 #about >img{
-    padding-left: 35px;
+    padding-left: 150px;
+    padding-top: 20px;
     position: absolute;
-    width: 500px;
+    width: 600px;
     height: 600px;
 }
 
 #about > article{
     position: relative;
-    padding-left:12px;
-    padding-top: 260px;
+    padding-left:700px;
+    padding-top: 200px;
     font-family: 'Poppins', sans-serif;
 }
-#about > section > aside {
-    height: 700px;
-    width: 700px;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
-    border-radius: 10%;
+
+#about > article > ol> h5{
+    font-size: 15px;
+    margin-bottom: 0.5rem;
 }
-#about > article > button{
-    background-color: #EBE322;
-    border: none;
-    color: white;
-    padding: 6px 60px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 16px;
-    font-size: 12px;
-    margin-top:0px ;
-    margin-left: 0px;
-    cursor: pointer;
-    font-weight: bold;
+#about > article > ol{
+    margin-top: 60px;
 }
 
 #about > article > h2 {
-    font-size: 20px;
+    font-size: 50px;
     margin-bottom: 0px;
 }
 
 #about > article > h3 {
-    font-size: 15px;
+    font-size: 25px;
     margin-top: 0px;
 }
 
-#about > article > p {
-    font-size: 10px;
-    margin-top: 0px;
-    width:94%
+#about > article > p{
+    width :800px;
+    height :100px;
+    font-size: 20px;
 }
 
 /*----------education--------*/
@@ -227,7 +214,7 @@ main{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 350px;
 }
 
@@ -237,8 +224,70 @@ main{
 }
 
 #education > section{
-    width: 320px;
-    height: 300px;
+    height: 100vh;
+    width: 98vw;
+    position: relative;
+}
+
+#education > section > div:nth-child(1){
+    width :3px;
+    height: 600px;
+    position: absolute;
+    background: #fced04;
+    left: 50%;
+    top: 75px;
+}
+
+#education > section > div:nth-child(1) > section {
+    width :40px;
+    height: 600px;
+    position: relative;
+    left: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#education > section > div:nth-child(1) > section > div{
+    width:12px;
+    height:12px;
+    background-color:white;
+    border: #fced04 solid 4px;
+    border-radius: 50%;
+}
+
+#education > section > div:nth-child(2){
+    position: absolute;
+    margin-top: 230px;
+    left : 50%;
+}
+
+#education > section > div:nth-child(3){
+    position: absolute;
+    margin-top: 110px;
+    left : 10%;
+}
+
+#education > section > div:nth-child(4){
+    position: absolute;
+    margin-top: -95px;
+    left : 50%;
+}
+
+#edu1 > img{
+    width: 650px;
+    height: 650px;
+}
+
+#edu2 > img{
+    width: 650px;
+    height: 650px;
+}
+
+#edu3 > img{
+    width: 650px;
+    height: 650px;
 }
 
 
@@ -248,7 +297,7 @@ main{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
-    font-size:40px;
+    font-size:50px;
     margin-top: 0px;
 }
 
@@ -350,3 +399,265 @@ main{
 #skills > section > aside:hover{
     transform: scale(1.05);
 }
+/*----------Contact Styles--------*/
+#contact > h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 50px;
+    margin-top: 350px;
+}
+
+#contact > div{
+    margin-top: 0px;
+    margin-left: 700px;
+}
+
+#details {
+    background-color: white;
+    height: 550px;
+    width: 1300px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    border-radius: 50px;
+    margin-top: 70px;
+    margin-left: 80px;
+    z-index: 6;
+}
+
+#bg1{
+    background-color: #fced04;
+    position: absolute;
+    width: 100%;
+    top:4700px;
+    height: 570px;
+    z-index: 5;
+}
+
+#details > h3{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 30px;
+    margin-top: 35px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+#details > h3:nth-child(2){
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 30px;
+    margin-top: 35px;
+    left: 50%;
+}
+
+#details > section > p{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    position: relative;
+    top: 80px;
+    font-size: 15px;
+    margin-top: 35px;
+    margin-left: 150px;
+    padding-top: 20px;
+}
+
+
+#details > section > p:nth-child(1){
+}
+
+#details > section > div{
+    height: 300px;
+    width : 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+
+#details >section > div > div{
+    height: 50px;
+    width: 50px;
+    background-color: #fced04;
+    border-radius: 100%;
+}
+
+#details >section > div > div >i{
+    font-size: 24px;
+    margin-left: 15px;
+    margin-top: 13px;
+    color: white;
+}
+
+#details >section > div > div:nth-child(1) >i{
+    font-size: 24px;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: white;
+}
+
+#details > form{
+    position: absolute;
+    left : 35%;
+    top : 0px;
+    transform: scale(.6);
+}
+
+#fname{
+    padding:10px;
+    border:0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color:#f1f2f6 ;
+}
+
+#lname{
+    padding:10px;
+    border:0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color:#f1f2f6 ;
+    position: relative;
+    bottom:55px;
+    left: 500px;
+}
+
+#email{
+    padding:10px;
+    border:0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color:#f1f2f6 ;
+    position: relative;
+    right: 325px;
+    top: 60px;
+}
+
+#phone{
+    padding:10px;
+    border:0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color:#f1f2f6 ;
+    position: relative;
+    bottom: 55px;
+    left: 500px;
+    top: 8px;
+}
+
+#submitbtn{
+    background-color: #fced04;
+    border: none;
+    color: white;
+    padding: 12px 82px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 16px;
+    font-size: 27px;
+    margin-top:110px ;
+    font-family: 'Poppins', sans-serif;
+}
+
+#textarea{
+    padding:10px;
+    border:0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color:#f1f2f6 ;
+    position: relative;
+    top: 70px;
+}
+
+#submitbtn:hover{
+    transform: scale(1.05);
+}
+
+/*----------footer Styles--------*/
+footer{
+    position: relative;
+    width: 100vw;
+    height: 150px;
+    background-color: white;
+    z-index: 18;
+    top: 70px;
+}
+
+footer > h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 24px;
+    padding-top: 40px;
+    width: 100vw;
+}
+
+footer > div{
+}
+
+footer> div >i{
+    position: relative;
+    background-color: #fced04;
+    color:white;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 100%;
+    padding-top: 10px;
+    padding-left:10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    top: 5px;
+    left: 40%;
+    transform: scale(.5);
+}
+
+footer> div >i:nth-child(2){
+    position: relative;
+    background-color: #fced04;
+    text-align: center;
+    color:white;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 100%;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+
+}
+
+footer> div >i:nth-child(4){
+    position: relative;
+    color:white;
+    width: 50px;
+    height:50px;
+    font-size: 25px;
+    border-radius: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+footer> div >i:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(227, 200, 73, 0.55) 0px 7px 29px 0px;
+}
+
+

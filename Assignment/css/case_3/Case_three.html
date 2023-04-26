@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css_Assignment_03</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <style>
+        main{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+        .first-ring{
+            position:fixed;
+            left: 0;
+            bottom: 0;
+            top:0;
+            right: 0;
+            margin: auto;
+            border: 14px solid gray;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+        .second-round{
+            position:fixed;
+            left: 0;
+            bottom: 0;
+            top:0;
+            right: 0;
+            margin: auto;
+            border: 8px solid red;
+            height: 190px;
+            width: 190px;
+            border-radius: 50%;
+        }
+
+        .second-window{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 31px;
+            right: 28px;
+            margin: auto;
+            background-color: purple;
+            height: 190px;
+            width: 190px;
+            border-radius: 50%;
+        }
+
+        .third-round{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 31px;
+            right: 28px;
+            margin: auto;
+            background-color: dodgerblue;
+            height: 190px;
+            width: 190px;
+            border-radius: 50%;
+        }
+
+        .fourth-round{
+            position: absolute;
+            left: 0;
+            bottom: 27px;
+            top: 0;
+            right: 28px;
+            margin: auto;
+            background-color: coral;
+            height: 190px;
+            width: 190px;
+            border-radius: 50%;
+        }
+
+        p{
+            text-align: center;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            color: white;
+            margin: auto;
+            height: 15px;
+            font-size: 20px;
+        }
+        pre{
+            text-align: center;
+            position: relative;
+            left: 0;
+            bottom: 10px;
+            top: 70px;
+            right: 0;
+            color: white;
+            margin: 0;
+            height: 15px;
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<main>
+    <section class="first-window">
+        <div class="first-ring">
+            <div class="second-ring">
+            </div>
+        </div>
+    </section>
+</main>
+
+<main>
+    <section class="second-window">
+        <div class="second-round">
+            <p><pre>Hello</pre></p>
+        </div>
+    </section>
+</main>
+
+<main>
+    <section class="third-window">
+        <div class="third-round">
+            <pre>welcome to</pre>
+        </div>
+    </section>
+</main>
+
+<main>
+    <section class="fourth-window">
+        <div class="fourth-round">
+            <p><pre>institute of
+software
+engineering</pre></p>
+        </div>
+    </section>
+</main>
+
+
+
+</body>
+</html>
