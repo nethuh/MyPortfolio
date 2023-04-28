@@ -146,7 +146,7 @@ main{
 .anim{
     opacity: 0;
     transform: translateY(30px);
-    animation: moveup 0.7s linear forwards;
+    animation: moveup 0.9s linear forwards;
 }
 @keyframes moveup {
     100%{
