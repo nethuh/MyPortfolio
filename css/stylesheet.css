@@ -71,7 +71,7 @@ main{
 #home > aside {
     position: absolute;
     padding-left:200px;
-    padding-top: 160px;
+    padding-top: 170px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -181,7 +181,7 @@ main{
 #about > article{
     position: relative;
     padding-left:700px;
-    padding-top: 200px;
+    padding-top: 60px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -399,7 +399,10 @@ main{
 #skills > section > aside:hover{
     transform: scale(1.05);
 }
+
+
 /*----------Contact Styles--------*/
+
 #contact > h1{
     text-align: center;
     font-family: 'Poppins', sans-serif;
