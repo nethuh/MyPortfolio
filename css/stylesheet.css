@@ -1,25 +1,27 @@
 header{
-    background: white;
+    background: black;
     box-shadow: 0px -1px 8px 2px #1c1717e8;
     position: fixed;
     width: 100%;
     top: 0;
-    height: 73px;
+    height: 65px;
     z-index: 20;
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
+
 }
 
 header > nav {
     position: absolute;
-    right: 150px;
-    top: 0;
+    right: 50px;
+    top: -8px;
 }
 
 header > div{
-    padding: 0px;
-    padding-left: 200px;
+    padding: -20px;
+    padding-left: 100px;
     font-size: 25px;
+    color: #f1f2f6;
 }
 
 header > nav > ul > li {
@@ -27,12 +29,12 @@ header > nav > ul > li {
     cursor: pointer;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
-    color: rgba(46, 41, 41, 0.96);
+    color: rgb(255, 255, 255);
     font-size: 19px;
 }
 
 header > nav >ul > li > a {
-    color: rgba(46, 41, 41, 0.96);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -59,11 +61,12 @@ header > nav > ul > li > a:hover::after{
 
 main{
     position : relative;
-    margin-top: 75px;
+    margin-top: 0px;
     height: 100%;
     width: 100%;
     background-image: url("../Assets/img/Background.png");
     background-size: cover;
+    /*background-color: midnightblue;*/
 }
 
 /*----------Home Styles--------*/
@@ -82,16 +85,19 @@ main{
 
 #home > aside >h1{
     font-size: 60px;
+    color: #f1f2f6;
 }
 
 #home > aside >h2{
     font-size: 50px;
     margin-bottom: 0px;
+    color: #f1f2f6;
 }
 
 #home > aside >h3{
     font-size: 30px;
     margin-top:0px ;
+    color: #f1f2f6;
 }
 
 #home > aside > button{
@@ -171,11 +177,11 @@ main{
 }
 
 #about >img{
-    padding-left: 150px;
+    padding-left: 100px;
     padding-top: 20px;
     position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
 }
 
 #about > article{
