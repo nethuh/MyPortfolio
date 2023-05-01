@@ -165,7 +165,7 @@ main{
 /*----------about--------*/
 #about > h1{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     margin-bottom: 0;
     font-size: 50px;
     margin-top:800px;
@@ -188,7 +188,7 @@ main{
     position: relative;
     padding-left:700px;
     padding-top: 60px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
 }
 
 #about > article > ol> h5{
@@ -221,7 +221,7 @@ main{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
     font-size: 50px;
-    margin-top: 350px;
+    margin-top: 150px;
 }
 
 #education > div{
@@ -334,7 +334,7 @@ main{
 
 #skills > section > aside > h2{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     margin-bottom: 0;
     font-size: 30px;
     margin-top: 35px;
@@ -368,7 +368,7 @@ main{
 
 #technologies > div > h3{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     font-size: 20px;
 }
 
@@ -380,7 +380,7 @@ main{
 
 #technologies > div > h3{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     font-size: 20px;
 }
 
@@ -398,7 +398,7 @@ main{
 
 #softwares > div > h3{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     font-size: 20px;
 }
 
@@ -434,18 +434,18 @@ main{
     z-index: 6;
 }
 
-/*#bg1{*/
-/*    background-color: #fced04;*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    top:4500px;*/
-/*    height: 570px;*/
-/*    z-index: 5;*/
-/*}*/
+#bg1{
+    background-color: #fced04;
+    position: absolute;
+    width: 100%;
+    top:4100px;
+    height: 380px;
+    z-index: 5;
+}
 
 #details > h3{
     text-align: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     margin-bottom: 0;
     font-size: 30px;
     margin-top: 35px;
@@ -455,16 +455,16 @@ main{
 
 #details > h3:nth-child(2){
     text-align: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     margin-bottom: 0;
     font-size: 30px;
     margin-top: 35px;
     left: 50%;
 }
 
-#details > section > address > a{
+#details > section > address > div{
     text-align: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     margin-bottom: 0;
     position: relative;
     top: 80px;
@@ -485,7 +485,7 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
     position: absolute;
-    top: 50px;
+    top: 78px;
     left: 80px;
 }
 
@@ -520,7 +520,7 @@ main{
 #fname{
     padding:10px;
     border:0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     font-size: 24px;
     border-radius: 20px;
     background-color:#f1f2f6 ;
@@ -529,7 +529,7 @@ main{
 #lname{
     padding:10px;
     border:0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     font-size: 24px;
     border-radius: 20px;
     background-color:#f1f2f6 ;
@@ -541,7 +541,7 @@ main{
 #email{
     padding:10px;
     border:0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     font-size: 24px;
     border-radius: 20px;
     background-color:#f1f2f6 ;
@@ -553,7 +553,7 @@ main{
 #phone{
     padding:10px;
     border:0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     font-size: 24px;
     border-radius: 20px;
     background-color:#f1f2f6 ;
@@ -574,13 +574,13 @@ main{
     border-radius: 16px;
     font-size: 27px;
     margin-top:110px ;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
 }
 
 #textarea{
     padding:10px;
     border:0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     font-size: 24px;
     border-radius: 20px;
     background-color:#f1f2f6 ;
@@ -604,7 +604,7 @@ footer{
 
 footer > h3{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     margin-bottom: 0;
     font-size: 24px;
     padding-top: 40px;
