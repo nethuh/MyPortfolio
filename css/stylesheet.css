@@ -172,7 +172,7 @@ main{
 }
 
 #about > div{
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 700px;
 }
 
@@ -434,14 +434,14 @@ main{
     z-index: 6;
 }
 
-#bg1{
-    background-color: #fced04;
-    position: absolute;
-    width: 100%;
-    top:4500px;
-    height: 570px;
-    z-index: 5;
-}
+/*#bg1{*/
+/*    background-color: #fced04;*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    top:4500px;*/
+/*    height: 570px;*/
+/*    z-index: 5;*/
+/*}*/
 
 #details > h3{
     text-align: left;
@@ -462,7 +462,7 @@ main{
     left: 50%;
 }
 
-#details > section > p{
+#details > section > address > a{
     text-align: left;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
@@ -596,10 +596,10 @@ main{
 footer{
     position: relative;
     width: 100vw;
-    height: 150px;
-    background-color: white;
+    height: 50px;
+    /*background-color: white;*/
     z-index: 18;
-    top: 70px;
+    top: -20px;
 }
 
 footer > h3{
@@ -612,15 +612,18 @@ footer > h3{
 }
 
 footer > div{
+    font-size: 40px ;
+    /*height: 50px;*/
+    /*width : 50px;*/
+    /*position: relative;*/
 }
 
 footer> div >i{
     position: relative;
     background-color: #fced04;
     color:white;
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
     padding-top: 10px;
     padding-left:10px;
@@ -636,9 +639,8 @@ footer> div >i:nth-child(2){
     background-color: #fced04;
     text-align: center;
     color:white;
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
     padding-top: 10px;
     padding-left: 5px;
@@ -652,9 +654,8 @@ footer> div >i:nth-child(2){
 footer> div >i:nth-child(4){
     position: relative;
     color:white;
-    width: 50px;
-    height:50px;
-    font-size: 25px;
+    width: 60px;
+    height:60px;
     border-radius: 100%;
     padding-top: 10px;
     padding-left: 10px;
