@@ -235,7 +235,7 @@ main{
     position: relative;
 }
 
-#education > section > div:nth-child(1){
+#education > section > div:nth-child(1){ /*Edu wala meda thiyana ira*/
     width :3px;
     height: 600px;
     position: absolute;
@@ -255,7 +255,7 @@ main{
     flex-direction: column;
 }
 
-#education > section > div:nth-child(1) > section > div{
+#education > section > div:nth-child(1) > section > div{ /* Rawum 3*/
     width:12px;
     height:12px;
     background-color:white;
