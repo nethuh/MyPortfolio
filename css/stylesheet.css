@@ -616,6 +616,7 @@ footer > div{
     /*height: 50px;*/
     /*width : 50px;*/
     /*position: relative;*/
+    line-height: 50px;
 }
 
 footer> div >i{
@@ -632,6 +633,7 @@ footer> div >i{
     top: 5px;
     left: 40%;
     transform: scale(.5);
+
 }
 
 footer> div >i:nth-child(2){
@@ -648,7 +650,6 @@ footer> div >i:nth-child(2){
     margin-left: 0px;
     margin-right: 0px;
 
-
 }
 
 footer> div >i:nth-child(4){
@@ -662,6 +663,7 @@ footer> div >i:nth-child(4){
     padding-right: 0px;
     margin-left: 0px;
     margin-right: 0px;
+
 
 }
 
