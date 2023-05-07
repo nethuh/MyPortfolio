@@ -325,11 +325,12 @@ main{
 }
 
 #skills > section > aside {
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 650px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
     border-radius: 10%;
+    left: 70px;
 }
 
 #skills > section > aside > h2{
@@ -345,6 +346,7 @@ main{
     height: 600px;
     width: 600px;
     border-radius: 10%;
+
 }
 
 #technologies {
@@ -355,13 +357,13 @@ main{
     display: grid;
     /*border: 2px solid red;*/
     grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(4,1fr);
-    gap: 8px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
 }
 
 #technologies > div:nth-child(6){
     grid-row: 2/3;
-    grid-column: 2/4;
+    grid-column: 2/3;
     background-size: cover;
     background-position: center;
 }
@@ -369,13 +371,14 @@ main{
 #technologies > div > h3{
     text-align: center;
     font-family: 'Roboto Thin', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
+    padding-right: 50px;
 }
 
 #technologies > div:nth-child(1) >img{
     padding-top: 20px;
-    width: 112px;
-    height: 112px;
+    width: 100px;
+    height: 100px;
 }
 
 #technologies > div > h3{
@@ -387,25 +390,132 @@ main{
 #softwares {
     position: relative;
     top: 80px;
-    left: 65px;
+    left: 60px;
     margin: auto;
     display: grid;
     /*border: 2px solid red;*/
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(4,1fr);
-    gap: 8px;
+    gap: 6px;
 }
 
 #softwares > div > h3{
     text-align: center;
     font-family: 'Roboto Thin', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #skills > section > aside:hover{
     transform: scale(1.05);
 }
 
+/*----------Projects Styles--------*/
+#projects > h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-size: 45px;
+    margin-top: 110px;
+}
+
+#projects > div{
+    margin-left: 720px;
+    width :3px;
+    height: 600px;
+    position: relative;
+}
+#projects > section{
+    height: 600px;
+    width: 1290px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    border-radius: 4%;
+    margin-top: 50px;
+    margin-left: 130px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+#projects > section > img{
+    width: 350px;
+    height: 350px;
+    border-radius: 4%;
+    z-index: 9;
+    margin-top:-50px;
+}
+#projects > section >img:nth-child(1){
+    margin-left: 100px;
+    /*background-image: url("/../../MyPortfolio/Assets/img/BlueOcean.png");*/
+    z-index: 8;
+}
+
+#projects > section >section{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    top: 525px;
+    left: 46.5%;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    z-index: 10;
+}
+#projects > section > section > h5{
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    margin-left: 100px;
+    right: 500px;
+    padding-left: 100px;
+    padding-right: 20px;
+    margin-top: 30px;
+
+}
+#projects > section > section > h5:nth-child(1){
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+#projects > section > section > h5:nth-child(2){
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    left: -40px;
+}
+#projects > section > section > h5:nth-child(3){
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    left: 100px;
+}
+#projects > section > section > div{
+    height: 20px;
+    width: 20px;
+    background-color: #fced04;
+    border-radius: 100%;
+}
+
+#projects > section > section > div:nth-child(1){
+    height: 20px;
+    width: 20px;
+    background-color: #bdc3c7;
+    border-radius: 100%;
+}
+
+#projects > section > section > div:nth-child(3){
+    height: 20px;
+    width: 20px;
+    background-color: #bdc3c7;
+    border-radius: 100%;
+}
+#projects > section > section > section > h5:nth-child(1) {
+    position: absolute;
+    top: 420px;
+    left: 100%;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
 
 /*----------Contact Styles--------*/
 
@@ -438,7 +548,7 @@ main{
     background-color: #fced04;
     position: absolute;
     width: 100%;
-    top:4100px;
+    top:4400px;
     height: 380px;
     z-index: 5;
 }
