@@ -4,8 +4,121 @@
     <meta charset="UTF-8">
     <title>Animations  Case-06</title>
     <link rel="stylesheet" href="../../../normalize.css">
+    <link rel="stylesheet" href="../../../../MyPortfolio/Assets/fonts/css/all.min.css">
+    <style>
+        #sky{
+            height: 100vh;
+            width: 100%;
+            background-image: url("assets/sky.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        #road{
+            height: 300px;
+            width: 500%;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 1;
+            background-repeat: repeat-x;
+            animation: road 5s linear infinite;
+        }
+
+        @keyframes road {
+            100%{
+                transform: translateX(-3400px);
+            }
+        }
+
+        #city{
+            height: 350px;
+            width: 500%;
+            position: absolute;
+            bottom: 200px;
+            left: 0;
+            right: 0;
+            display: block;
+            z-index: 1;
+            background-image: url("assets/city.png");
+            background-repeat: repeat-x;
+            animation: city 15s linear infinite;
+        }
+
+        @keyframes city {
+            100%{
+                transform: translateX(-1400px);
+            }
+        }
+
+        #car{
+            width: 400px;
+            left: 50%;
+            bottom: 120px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+        }
+
+        #car > img{
+            width: 100%;
+        }
+
+        #wheel{
+            left: 50%;
+            bottom: 200px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+        }
+
+        #wheel > img{
+            width: 72px;
+            height: 72px;
+            animation: wheel 1s linear infinite;
+        }
+
+        #front{
+            left: 80px;
+            position: absolute;
+        }
+
+        #back{
+            left: -165px;
+            position: absolute;
+        }
+
+        @keyframes wheel {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+    </style>
 </head>
 <body>
+<div id="sky">
+    <div id="road">
+        <img src="assets/road.jpg">
+    </div>
+    <div id="city">
+    </div>
+
+    <div id="car">
+        <img src="assets/car.png">
+    </div>
+
+    <div id="wheel">
+        <img src="assets/wheel.png" id="front">
+        <img src="assets/wheel.png" id="back">
+    </div>
+
+</div>
 
 </body>
 </html>
