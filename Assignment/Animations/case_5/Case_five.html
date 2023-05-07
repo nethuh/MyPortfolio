@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations  Case-05</title>
+    <link rel="stylesheet" href="../../../normalize.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="../../../../MyPortfolio/Assets/fonts/css/all.min.css">
+
+    <style>
+        main{
+            width: 1600px;
+            height: 850px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow-x: hidden;
+        }
+
+        main > section{
+            height: 100%;
+            width: 400%;
+            display: flex;
+            position: relative;
+            animation-name: slider;
+            animation-iteration-count: infinite;
+            animation-duration: 30s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        main > section > div {
+            height: 100%;
+            width: 100%;
+        }
+
+        main>section>div:nth-child(1){
+            background: url("../../../../MyPortfolio/Assignment/Animations/case_5/assets/01.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section>div:nth-child(2){
+            background: url("../../../../MyPortfolio/Assignment/Animations/case_5/assets/02.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section>div:nth-child(3){
+            background: url("../../../../MyPortfolio/Assignment/Animations/case_5/assets/03.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section>div:nth-child(4){
+            background: url("../../../../MyPortfolio/Assignment/Animations/case_5/assets/05.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes slider {
+            0%,10%{
+                transform: translateX(0);
+            }
+
+            30%,50%{
+                transform: translateX(-25%);
+            }
+
+            60%,80%{
+                transform: translateX(-50%);
+            }
+
+            90%,100%{
+                transform: translateX(-75%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>
