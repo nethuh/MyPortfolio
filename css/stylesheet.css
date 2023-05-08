@@ -254,7 +254,6 @@ main{
     justify-content: space-evenly;
     flex-direction: column;
 }
-
 #education > section > div:nth-child(1) > section > div{ /* Rawum 3*/
     width:12px;
     height:12px;
@@ -295,7 +294,9 @@ main{
     width: 650px;
     height: 650px;
 }
-
+.education section img:hover{
+    transform: scale(1.05);
+}
 
 /*----------Skill Styles--------*/
 
