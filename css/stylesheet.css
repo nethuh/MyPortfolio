@@ -171,14 +171,14 @@ main{
     margin-top:800px;
 }
 
-#about > div{
-    margin-top: 0;
-    margin-left: 700px;
-}
+/*#about > div{*/
+/*    margin-top: 0;*/
+/*    margin-left: 700px;*/
+/*}*/
 
 #about >img{
-    padding-left: 100px;
-    padding-top: 20px;
+    padding-left: 50px;
+    padding-top: 100px;
     position: absolute;
     width: 550px;
     height: 550px;
@@ -187,7 +187,7 @@ main{
 #about > article{
     position: relative;
     padding-left:700px;
-    padding-top: 60px;
+    padding-top: 80px;
     font-family: 'Roboto Thin', sans-serif;
 }
 
@@ -200,7 +200,7 @@ main{
 }
 
 #about > article > h2 {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 0px;
 }
 
@@ -565,7 +565,7 @@ main{
     background-color: #fced04;
     position: absolute;
     width: 100%;
-    top:4400px;
+    top:4350px;
     height: 380px;
     z-index: 5;
 }
