@@ -61,7 +61,7 @@ header > nav > ul > li > a:hover::after{
 
 main{
     position : relative;
-    margin-top: 0px;
+    margin-top: 0;
     height: 100%;
     width: 100%;
     background-image: url("../Assets/img/Background.png");
@@ -110,7 +110,7 @@ main{
     display: inline-block;
     border-radius: 16px;
     font-size: 25px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 80px 40px -2px;
+    box-shadow: rgba(252, 237, 4, 0.19) 0px 80px 40px -2px;
     margin-top:50px ;
     cursor: pointer;
     text-decoration: white;
@@ -163,6 +163,14 @@ main{
 
 }
 /*----------about--------*/
+/*.about{*/
+/*   !* background-image: url("../../MyPortfolio/Assets/img/AboutBgrnd1.png");*!*/
+/*   !* background-size: cover;*!*/
+/*   !* position: relative;*!*/
+/*   !*top: 0;*!*/
+/*   !* height: 700px;*!*/
+/*   !* width: 100%;*!*/
+/*}*/
 #about > h1{
     text-align: center;
     font-family: 'Roboto Thin', sans-serif;
