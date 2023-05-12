@@ -569,14 +569,14 @@ main{
     z-index: 6;
 }
 
-#bg1{
-    background-color: #fced04;
-    position: absolute;
-    width: 100%;
-    top:4350px;
-    height: 380px;
-    z-index: 5;
-}
+/*#bg1{*/
+/*    background-color: #fced04;*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    top:4350px;*/
+/*    height: 380px;*/
+/*    z-index: 5;*/
+/*}*/
 
 #details > h3{
     text-align: left;
