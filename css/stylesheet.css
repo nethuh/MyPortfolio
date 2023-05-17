@@ -425,30 +425,27 @@ main{
     margin-top: 110px;
 }
 
-#projects > div{
-    margin-left: 720px;
-    width :3px;
-    height: 600px;
-    position: relative;
+/*#projects > div{*/
+/*    margin-left: 720px;*/
+/*    width :3px;*/
+/*    height: 600px;*/
+/*    position: relative;*/
+/*}*/
+.projects section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 6px;
+    margin-left: 120px;
+    margin-right: 100px;
+    margin-top: 50px;
 }
-
 .projects section img {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 50px;
     width: 350px;
     height: 350px;
-
 }
-
-.projects  section section h5 {
-    display: inline-block;
-    width: 400px;
+.projects  h5 {
     font-size: 15px;
-}
-#projects > section{
-    margin-top: 90px;
-    margin-left: 200px;
+    font-family: "Roboto Thin", sans-serif;
 }
 .projects section img:hover{
     transform: scale(1.05);
