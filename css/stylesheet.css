@@ -187,7 +187,7 @@ main{
     font-family: 'Roboto Thin', sans-serif;
     margin-bottom: 0;
     font-size: 50px;
-    margin-top:700px;
+    margin-top:820px;
 }
 
 /*#about > div{*/
@@ -197,7 +197,7 @@ main{
 
 #about >img{
     padding-left: 50px;
-    padding-top: 100px;
+    padding-top: 45px;
     position: absolute;
     width: 500px;
     height: 500px;
@@ -215,14 +215,13 @@ main{
     margin-bottom: 0.5rem;
 }
 #about > article > ol{
-    margin-top: 60px;
+    margin-top: 50px;
     background-color: white;
     height: 200px;
     width: 450px;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.65) 0px 8px 24px;
-    border-radius: 50px;
-
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 15px;
+    border-radius: 40px;
 }
 
 #about > article > h2 {
@@ -247,7 +246,7 @@ main{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
     font-size: 50px;
-    margin-top: 150px;
+    margin-top: 160px;
 }
 
 #education > div{
@@ -463,6 +462,32 @@ main{
     font-size: 50px;
     margin-top: 40px;
 }
+.assignment img{
+    width: 150px;
+    height: 150px;
+}
+.assignment h2{
+    text-align: center;
+    font-family: "Poppins" ,sans-serif;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+#Css{
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr) ;
+    gap: 3px;
+    margin-left: 500px;
+}
+#Animation{
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 3px;
+    margin-left: 500px;
+}
 /*----------Contact Styles--------*/
 
 #contact > h1{
@@ -470,7 +495,7 @@ main{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0;
     font-size: 50px;
-    margin-top: 150px;
+    margin-top: 60px;
 }
 
 #contact > div{
