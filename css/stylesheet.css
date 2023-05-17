@@ -467,10 +467,18 @@ main{
     height: 150px;
 }
 .assignment h2{
-    text-align: center;
-    font-family: "Poppins" ,sans-serif;
     margin-top: 45px;
     margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 30px;
+
+}
+.assignment h3{
+    margin-left: 20px;
+    /*text-align: center;*/
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 22px;
 }
 #Css{
     width: 600px;
@@ -487,6 +495,9 @@ main{
     grid-template-rows: repeat(2,1fr);
     gap: 3px;
     margin-left: 500px;
+}
+.assignment img:hover{
+    transform: scale(1.15);
 }
 /*----------Contact Styles--------*/
 
