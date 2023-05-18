@@ -892,13 +892,13 @@ footer> div >i:hover{
     /*----------Home Styles--------*/
     #home > aside {
         position: absolute;
-        padding-left: 200px;
-        padding-top: 230px;
+        padding-left: 136px;
+        padding-top: 177px;
         font-family: 'Poppins', sans-serif;
     }
 
     #home > section {
-        padding-top: 120px;
+        padding-top: 88px;
         padding-left: 1000px;
     }
 
