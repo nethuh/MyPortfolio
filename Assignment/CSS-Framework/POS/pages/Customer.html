@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Customer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="../assets/js/bootstrap.js"></script>
+</head>
+<body class="container-fluid">
+<header id="headerSection">
+    <nav class="navbar navbar-expand-lg"style="background: #065606;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-danger" href="#">
+                <img src="../assets/img/cart%20logo.png" alt="Bootstrap" width="40" height="40"> POS System
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Item.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PlaceOrder.html">Order</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-------Tab header and search bar---------->
+
+<main class="justify-content-center mt-4 align-content-center">
+    <section class="row col-12">
+        <section id="displaySection" class="col-9 mx-0 my-4">
+            <section id="formNameAndSearch" class="mx-4">
+                <nav class="navbar bg-light  ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">Manage Customer</a>
+                        <form class="d-flex" role="search">
+
+                            <!-- Example single danger button -->
+                            <div class="btn-group mx-2">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background: #058105;">
+                                    ID
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">ID</a></li>
+                                    <li><a class="dropdown-item" href="#">Name</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success me-2" type="Button">Search</button>
+                            <button class="btn btn-outline-primary" type="Button">Clear</button>
+                            <!--<button type="button" class="btn btn-success">Add New +</button>-->
+
+                        </form>
+                    </div>
+                </nav>
+            </section>
+
+            <section id="table" class="mx-4">
+                <table class="table my-4">
+                    <thead class="table-dark">
+                    <tr id="tableHeader">
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblCustomer">
+                    </tbody>
+                </table>
+            </section>
+        </section>
+
+        <section id="inputSection" class="col-3 justify-content-center my-4 ">
+            <section class="col-12 card">
+                <div class="badge bg-primary text-wrap fs-5 fw-semibold p-4" >
+                    Input Details
+                </div>
+
+                <form id="item-form px-2" >
+                    <div class="m-3">
+                        <label for="txtCustID" class="form-label">Customer ID</label>
+                        <input type="text" class="form-control " placeholder="C001" id="txtCustID">
+                    </div>
+                    <div class="m-3">
+                        <label for="txtCustName" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" placeholder="Nethmi" id="txtCustName" >
+                    </div>
+                    <div class="m-3">
+                        <label for="txtCustAddress" class="form-label">Customer address</label>
+                        <input type="text" class="form-control" placeholder="Galle" id="txtCustAddress" >
+                    </div>
+                    <div class="m-3">
+                        <label for="txtCustSalary" class="form-label">Customer Salary</label>
+                        <input type="text" class="form-control" placeholder="35000.00" id="txtCustSalary" >
+                    </div>
+
+                    <div class="m-3 justify-content-center">
+                        <div style="display: inline-block" class="me-2">
+                            <button id="save-btn" type="button" class="btn btn-success">Save</button>
+                        </div>
+                        <div style="display: inline-block" class="me-2">
+                            <button id="updated-btn" type="button" class="btn btn-primary">Update</button>
+                        </div>
+                        <div style="display: inline-block" class="me-2">
+                            <button id="delete-btn" type="button" class="btn btn-danger">Delete</button>
+                        </div>
+                        <div style="display: inline-block" class="me-2">
+                            <button id="clear-btn" type="button" class="btn btn-warning">Clear</button>
+                        </div>
+                        <div style="display: inline-block">
+                            <button id="getAll-btn" type="button" class="btn btn-secondary">Get All</button>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+        </section>
+    </section>
+</main>
+
+<script>
+    <!----------save customer----------->
+
+    var customers = [];
+    //created customer array in global scope
+
+    $("#save-btn").click(function (){
+        let customerID = $("#txtCustID").val();
+        let customerName = $("#txtCustName").val();
+        let customerAddress = $("#txtCustAddress").val();
+        let customerSalary = $("#txtCustSalary").val();
+
+        var customerObj = {
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            salary: customerSalary
+        }
+
+        customers.push(customerObj);
+
+        loadAllCustomer();
+
+        bindRowClickEvents();
+
+    });
+
+    $("#getAll-btn").click(function () {
+        loadAllCustomer();
+    })
+
+    function loadAllCustomer(){
+
+        //remove all the table body content before adding data
+        $("#tblCustomer").empty();
+
+        for (var customer of customers){
+
+            // Using String Literals to do the same thing as above
+            var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
+
+            //then add it to the table body of customer table
+            $("#tblCustomer").append(row);
+        }
+    }
+
+
+    function bindRowClickEvents() {
+        $("#tblCustomer>tr").click(function () {
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let address = $(this).children(":eq(2)").text();
+            let salary = $(this).children(":eq(3)").text();
+            // console.log(id, name, address, salary);
+
+            //setting table details values to text fields
+            $('#txtCustID').val(id);
+            $('#txtCustName').val(name);
+            $('#txtCustAddress').val(address);
+            $('#txtCustSalary').val(salary);
+
+        });
+    }
+
+    $("#txtCustID").on('keydown', function (event) {
+        if(event.key == "Tab") {
+            event.preventDefault();
+        }
+
+        else if (event.key == "Enter") {
+            $("#txtCustName").focus();
+        }
+    });
+
+
+</script>
+
+</body>
+</html>

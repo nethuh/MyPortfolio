@@ -93,6 +93,7 @@ main{
 #home > section{
     padding-top: 100px;
     padding-left: 1000px;
+    background-size: cover;
 
 }
 

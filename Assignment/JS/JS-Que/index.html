@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Que</title>
+    <link rel="stylesheet" href="../css/Style.css">
+<!--    <script src="../js/bootstrap.js"></script>-->
+<!--    <link rel="stylesheet" href="../css/bootstrap.css">-->
+</head>
+<body>
+<h2>Java Script Queue</h2>
+
+<div id="up"></div>
+<div id="hr1"></div>
+<section id="container">
+
+</section>
+<div id="hr2"></div>
+<div id="down"></div>
+
+<!--jQuery -->
+<script src="../js/jquery-3.6.1.min.js"></script>
+<!--script-->
+<script >var colorQue={
+    colors:[
+        {col:'black'},
+        {col:'navyblue'},
+        {col:'darkblue'},
+        {col:'blue'},
+        {col:'deepskyblue'},
+        {col:'lightblue'}
+    ],
+    nextColor:function (){
+        var lastColor=this.colors.pop();
+        this.colors.unshift(lastColor);
+    }
+}
+
+renderQue();
+function renderQue(){
+    $(`#container`).empty();
+    for (let i = 0; i < colorQue.colors.length; i++) {
+        if (i==0){
+            $(`#up`).css("background-color", colorQue.colors[0].col)
+        }
+        else if (i==(colorQue.colors.length-1)){
+            $(`#down`).css("background-color", colorQue.colors[colorQue.colors.length-1].col)
+        }
+        else {
+            $(`#container`).append(`<div style="background-color: ${colorQue.colors[i].col}"></div>`)
+        }
+    }
+    colorQue.nextColor();
+}
+
+setInterval(renderQue,700);
+</script>
+</body>
+</html>
