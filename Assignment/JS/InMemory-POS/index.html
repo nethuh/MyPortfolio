@@ -429,6 +429,35 @@
         //Work done;
     });
 
+    $("#savebtn").click(function () {
+        //get typed values of input fields
+        let code = $("#txtItemCode").val();
+        let name = $("#txtItemName").val();
+        let price = $("#txtItemPrice").val();
+        let qty = $("#txtQty").val();
+        //let's print it
+        console.log(code, name, price, qty);
+        //catch the table body
+        let tBody = $("#tblItem");
+        // let's see how we should insert a table row using html format
+
+        //ok then, let's create the above row
+        let tr = $("<tr>");
+        //let's create another four columns
+        let col1 = $("<td>").text(code);
+        let col2 = $("<td>").text(name);
+        let col3 = $("<td>").text(price);
+        let col4 = $("<td>").text(qty);
+        //set 4 columns to the previously created row
+        tr.append(col1);
+        tr.append(col2);
+        tr.append(col3);
+        tr.append(col4);
+        //set the row to the table body
+        tBody.append(tr);
+        //Work done;
+    });
+
 </script>
 </body>
 </html>
