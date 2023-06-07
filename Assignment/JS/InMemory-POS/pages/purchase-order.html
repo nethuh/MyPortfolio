@@ -17,7 +17,7 @@
 </head>
 <body>
 <!--header-->
-<header class="jumbotron bg-success text-white p-3">
+<header class="jumbotron bg-dark text-white p-3">
     <h1 class="position-absolute" id="nav"></h1>
     <ul class="list-group list-group-horizontal text-danger justify-content-end font-weight-bold">
         <li class="list-group-item bg-white" id="lnkHome"><a href="../index.html">Home</a></li>
@@ -226,46 +226,42 @@
             <!---------->
         </div>
     </div>
+    <script src="../assets/js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add click event to lnkHome
+            $("#lnkHome").click(function() {
+                window.location.href = "../index.html";
+            });
+
+            // Add click event to lnkCustomer
+            $("#lnkCustomer").click(function() {
+                window.location.href = "customer.html";
+            });
+
+            // Add click event to lnkItem
+            $("#lnkItem").click(function() {
+                window.location.href = "item.html";
+            });
+
+            // Add click event to lnkOrders
+            $("#lnkOrders").click(function() {
+                window.location.href = "purchase-order.html";
+            });
+
+            // Add click event to btnAddToTable
+            $("#btnAddToTable").click(function() {
+                // Code to add item to the table
+            });
+
+            // Add click event to btnSubmitOrder
+            $("#btnSubmitOrder").click(function() {
+                // Code to submit the order
+            });
+        });
+    </script>
 </main>
-
-
-<script src="../assets/js/jquery-3.7.0.min.js"></script>
-<script>
-    $(document).ready(function() {
-        // Add click event to lnkHome
-        $("#lnkHome").click(function() {
-            window.location.href = "../index.html";
-        });
-
-        // Add click event to lnkCustomer
-        $("#lnkCustomer").click(function() {
-            window.location.href = "customer.html";
-        });
-
-        // Add click event to lnkItem
-        $("#lnkItem").click(function() {
-            window.location.href = "item.html";
-        });
-
-        // Add click event to lnkOrders
-        $("#lnkOrders").click(function() {
-            window.location.href = "purchase-order.html";
-        });
-
-        // Add click event to btnAddToTable
-        $("#btnAddToTable").click(function() {
-            // Code to add item to the table
-        });
-
-        // Add click event to btnSubmitOrder
-        $("#btnSubmitOrder").click(function() {
-            // Code to submit the order
-        });
-    });
-</script>
-
 </body>
 </html>
 
-</body>
-</html>
+
