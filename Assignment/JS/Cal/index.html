@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../Cal/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Cal/assets/css/styles.css">
+</head>
+<body>
+
+<div class="container my-4">
+
+    <hr class="mb-5"/>
+
+
+    <div class="calculator card bg-info" id="calcScreen">
+
+        <input id="totalField" type="text" class="calculator-screen z-depth-1" value="" disabled />
+        <input id="inputField" type="text" class="calculator-screen z-depth-1" value="" disabled />
+
+        <div class="calculator-keys">
+
+            <button id="btnPlus" type="button" class="operator btn btn-primary" value="+">+</button>
+            <button id="btnMin" type="button" class="operator btn btn-primary" value="-">-</button>
+            <button id="btnMult" type="button" class="operator btn btn-primary" value="*">*</button>
+            <button id="btnDiv" type="button" class="operator btn btn-primary" value="/">/</button>
+
+            <button id="btn7" type="button" value="7" class="btn btn-light waves-effect">7</button>
+            <button id="btn8" type="button" value="8" class="btn btn-light waves-effect">8</button>
+            <button id="btn9" type="button" value="9" class="btn btn-light waves-effect">9</button>
+
+
+            <button id="btn4" type="button" value="4" class="btn btn-light waves-effect">4</button>
+            <button id="btn5" type="button" value="5" class="btn btn-light waves-effect">5</button>
+            <button id="btn6" type="button" value="6" class="btn btn-light waves-effect">6</button>
+
+
+            <button id="btn1" type="button" value="1" class="btn btn-light waves-effect">1</button>
+            <button id="btn2" type="button" value="2" class="btn btn-light waves-effect">2</button>
+            <button id="btn3" type="button" value="3" class="btn btn-light waves-effect">3</button>
+
+
+            <button id="btn0" type="button" value="0" class="btn btn-light waves-effect">0</button>
+            <button id="btnPoint" type="button" class="decimal function btn btn-secondary" value=".">.</button>
+            <button id="btnC" type="button" class="all-clear function btn btn-secondary btn-sm" value="all-clear">C</button>
+
+            <button id="btnEqual" type="button" class="equal-sign operator btn btn btn-secondary btn-default" value="=">=</button>
+
+        </div>
+    </div>
+</div>
+
+<!--Bootstrap-->
+<script src="../Cal/assets/js/bootstrap.min.js"></script>
+<!--jQuery for javaScript-->
+<script src="../Cal/assets/js/jquery-3.6.1.min.js"></script>
+<!--jQuery for javaScript-->
+<script>
+    let mainPanel = $('#totalField');
+    let calPanel = $('#inputField')
+    let buttons = [$('#btnAc'),$('#btnC'),$('#btnPcnt'),$('#btnDiv'),$('#btn7'),$('#btn8'),$('#btn9'),$('#btnMult'),
+        $('#btn4'),$('#btn5'),$('#btn6'),$('#btnMin'),$('#btn1'),$('#btn2'),$('#btn3'),$('#btnPlus'),$('#btn0'),$('#btnPoint'),$('#btnEqual')];
+
+    buttons.forEach(button => {
+        button.click(() => {
+            calPanel.val(calPanel.val() + button.text())
+        })
+    });
+
+    function calc(stream) {
+        // calculations method
+        try {
+            var num = stream.split(/\+|\-|\*|\//);
+            var signs = stream.split(/\d+/);
+            signs.shift();
+            signs.pop();
+        } catch (error) {
+            alert("invalid expression! try again : " + error)
+        }
+        finally {
+            let total = signs.length;
+            let numCount = 0;
+            let signCount = 0;
+            let val = calcExtended(parseInt(num[numCount++]),signs[signCount++],parseInt(num[numCount++]));
+            while (signCount<total) {
+                val = calcExtended(val,signs[signCount++],parseInt(num[numCount++]));
+            }
+            //calPanel.val(val);
+            mainPanel.val(val);
+
+        }
+    }
+
+    function calcExtended(fnm,fnc,lnm) {
+        let finVal;
+        switch (fnc) {
+            case '+':
+                finVal = fnm + lnm;
+                break;
+            case '*':
+                finVal = fnm * lnm;
+                break;
+            case '-':
+                finVal = fnm - lnm;
+                break;
+            case '/':
+                finVal = fnm / lnm;
+                break;
+        }
+        return finVal;
+    }
+
+    $('#btnAc').click(() => {
+        $('#totalField').val('');
+        $('#inputField').val('');
+    } )
+
+    $('#btnC').click(() => {
+        $('#totalField').val('');
+        $('#inputField').val('');
+    } )
+
+    $('#btnEqual').click(() => {
+        calc(calPanel.val());
+    } )
+
+</script>
+
+</body>
+</html>

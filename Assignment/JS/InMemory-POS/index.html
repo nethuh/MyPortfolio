@@ -399,36 +399,62 @@
 </main>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
 <script>
-    //select the button and add an event to it
+    //select the button and add an event to customer
     $("#save-btn").click(function () {
+        saveCustomer();
+
+        loadAllCustomer();
+
+        bindRowClickEventsCustomer();
+
+        clearCustomer();
+
+        loadAllCustomerOption();
+
+        alert("Customer Successfully Saved!")
+
+    });
+    function saveCustomer() {
         //get typed values of input fields
         let id = $("#txtCustID").val();
         let name = $("#txtCustName").val();
         let address = $("#txtCustAddress").val();
         let salary = $("#txtCustSalary").val();
-        //let's print it
-        console.log(id, name, address, salary);
-        //catch the table body
-        let tBody = $("#tblCustomer");
-        // let's see how we should insert a table row using html format
+        // //let's print it
+        // console.log(id, name, address, salary);
+        // //catch the table body
+        // let tBody = $("#tblCustomer");
+        // // let's see how we should insert a table row using html format
+        //
+        // //ok then, let's create the above row
+        // let tr = $("<tr>");
+        // //let's create another four columns
+        // let col1 = $("<td>").text(id);
+        // let col2 = $("<td>").text(name);
+        // let col3 = $("<td>").text(address);
+        // let col4 = $("<td>").text(salary);
+        // //set 4 columns to the previously created row
+        // tr.append(col1);
+        // tr.append(col2);
+        // tr.append(col3);
+        // tr.append(col4);
+        // //set the row to the table body
+        // tBody.append(tr);
+        // //Work done;
+        var customerArray =[];
+        var customerObj = {
+            id: id,
+            name: name,
+            address: address,
+            salary: salary
+        }
 
-        //ok then, let's create the above row
-        let tr = $("<tr>");
-        //let's create another four columns
-        let col1 = $("<td>").text(id);
-        let col2 = $("<td>").text(name);
-        let col3 = $("<td>").text(address);
-        let col4 = $("<td>").text(salary);
-        //set 4 columns to the previously created row
-        tr.append(col1);
-        tr.append(col2);
-        tr.append(col3);
-        tr.append(col4);
-        //set the row to the table body
-        tBody.append(tr);
-        //Work done;
-    });
+        customerArray.push(customerObj);
+        console.log(customerObj);
+    }
 
+
+    //select the button and add an event to Item
     $("#savebtn").click(function () {
         //get typed values of input fields
         let code = $("#txtItemCode").val();
