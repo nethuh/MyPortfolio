@@ -420,27 +420,28 @@
         let name = $("#txtCustName").val();
         let address = $("#txtCustAddress").val();
         let salary = $("#txtCustSalary").val();
-        // //let's print it
-        // console.log(id, name, address, salary);
-        // //catch the table body
-        // let tBody = $("#tblCustomer");
-        // // let's see how we should insert a table row using html format
-        //
-        // //ok then, let's create the above row
-        // let tr = $("<tr>");
-        // //let's create another four columns
-        // let col1 = $("<td>").text(id);
-        // let col2 = $("<td>").text(name);
-        // let col3 = $("<td>").text(address);
-        // let col4 = $("<td>").text(salary);
-        // //set 4 columns to the previously created row
-        // tr.append(col1);
-        // tr.append(col2);
-        // tr.append(col3);
-        // tr.append(col4);
-        // //set the row to the table body
-        // tBody.append(tr);
-        // //Work done;
+
+        //let's print it
+        console.log(id, name, address, salary);
+        //catch the table body
+        let tBody = $("#tblCustomer");
+        // let's see how we should insert a table row using html format
+
+        //ok then, let's create the above row
+        let tr = $("<tr>");
+        //let's create another four columns
+        let col1 = $("<td>").text(id);
+        let col2 = $("<td>").text(name);
+        let col3 = $("<td>").text(address);
+        let col4 = $("<td>").text(salary);
+        //set 4 columns to the previously created row
+        tr.append(col1);
+        tr.append(col2);
+        tr.append(col3);
+        tr.append(col4);
+        //set the row to the table body
+        tBody.append(tr);
+        //Work done;
         var customerArray =[];
         var customerObj = {
             id: id,
@@ -448,7 +449,6 @@
             address: address,
             salary: salary
         }
-
         customerArray.push(customerObj);
         console.log(customerObj);
     }
@@ -483,6 +483,7 @@
         tBody.append(tr);
         //Work done;
     });
+
 
 </script>
 </body>

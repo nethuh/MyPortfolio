@@ -499,6 +499,13 @@ main{
     margin-left: 150px;
     margin-right: 70px;
 }
+#JS{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 25px;
+    margin-left: 150px;
+    margin-right: 70px;
+}
 .assignment img:hover{
     transform: scale(1.15);
 }
