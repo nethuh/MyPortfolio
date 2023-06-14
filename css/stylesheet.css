@@ -614,56 +614,56 @@ main{
 
 #details > form{
     position: absolute;
-    left : 35%;
+    left : 40%;
     top : 0px;
     transform: scale(.6);
 }
 
-#fname{
-    padding:10px;
-    border:0;
-    font-family: 'Roboto Thin', sans-serif;
-    font-size: 24px;
-    border-radius: 20px;
-    background-color:#f1f2f6 ;
-}
+/*#fname{*/
+/*    padding:10px;*/
+/*    border:0;*/
+/*    font-family: 'Roboto Thin', sans-serif;*/
+/*    font-size: 24px;*/
+/*    border-radius: 20px;*/
+/*    background-color:#f1f2f6 ;*/
+/*}*/
 
-#lname{
-    padding:10px;
-    border:0;
-    font-family: 'Roboto Thin', sans-serif;
-    font-size: 24px;
-    border-radius: 20px;
-    background-color:#f1f2f6 ;
-    position: relative;
-    bottom:55px;
-    left: 500px;
-}
+/*#lname{*/
+/*    padding:10px;*/
+/*    border:0;*/
+/*    font-family: 'Roboto Thin', sans-serif;*/
+/*    font-size: 24px;*/
+/*    border-radius: 20px;*/
+/*    background-color:#f1f2f6 ;*/
+/*    position: relative;*/
+/*    bottom:55px;*/
+/*    left: 500px;*/
+/*}*/
 
-#email{
-    padding:10px;
-    border:0;
-    font-family: 'Roboto Thin', sans-serif;
-    font-size: 24px;
-    border-radius: 20px;
-    background-color:#f1f2f6 ;
-    position: relative;
-    right: 325px;
-    top: 60px;
-}
+/*#email{*/
+/*    padding:10px;*/
+/*    border:0;*/
+/*    font-family: 'Roboto Thin', sans-serif;*/
+/*    font-size: 24px;*/
+/*    border-radius: 20px;*/
+/*    background-color:#f1f2f6 ;*/
+/*    position: relative;*/
+/*    right: 325px;*/
+/*    top: 60px;*/
+/*}*/
 
-#phone{
-    padding:10px;
-    border:0;
-    font-family: 'Roboto Thin', sans-serif;
-    font-size: 24px;
-    border-radius: 20px;
-    background-color:#f1f2f6 ;
-    position: relative;
-    bottom: 55px;
-    left: 500px;
-    top: 8px;
-}
+/*#phone{*/
+/*    padding:10px;*/
+/*    border:0;*/
+/*    font-family: 'Roboto Thin', sans-serif;*/
+/*    font-size: 24px;*/
+/*    border-radius: 20px;*/
+/*    background-color:#f1f2f6 ;*/
+/*    position: relative;*/
+/*    bottom: 55px;*/
+/*    left: 500px;*/
+/*    top: 8px;*/
+/*}*/
 
 #submitbtn{
     background-color: #fced04;
@@ -675,19 +675,22 @@ main{
     display: inline-block;
     border-radius: 16px;
     font-size: 27px;
-    margin-top:110px ;
+    margin-top:60px ;
     font-family: 'Roboto Thin', sans-serif;
 }
-
-#textarea{
-    padding:10px;
-    border:0;
-    font-family: 'Roboto Thin', sans-serif;
-    font-size: 24px;
-    border-radius: 20px;
+.contact__input{
+    border: none;
+    padding: 0.8rem 1.25rem;
+    width: 640px;
+    border-radius:16px;
+    font-size: 27px;
+    margin-bottom: .5rem;
     background-color:#f1f2f6 ;
-    position: relative;
-    top: 70px;
+}
+
+.textarea{
+    height: 200px;
+    resize: none;
 }
 .bubble img{
     width: 135px;

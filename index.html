@@ -26,7 +26,7 @@
 <br>
 <header>
     <div>
-        <p><b>Sayani</b> Nethmi</p>
+        <p><font color="yellow">Nethu </font></p>
     </div>
 
     <nav>
@@ -47,7 +47,7 @@
     <section class="home" id="home">
         <aside>
             <h1 class="anim">Hello There,</h1>
-            <h2 class="anim">I,m Sayani <font color ="yellow">Nethmi</font></h2>
+            <h2 class="anim">I'm Sayani <font color ="yellow">Nethmi</font></h2>
             <h3 class="anim">Full Stack Developer</h3>
             <button class="button1" ><b class="anim">Click</b></button>
 
@@ -358,15 +358,33 @@
 <!--                <p>+94 77 54 08 818</p>-->
             </section>
 
-            <form>
-                <input type="text" id="fname" name="fname" value=" First Name"><br>
-                <input type="text" id="lname" name="lname" value=" Last Name">
-                <input type="text" id="email" name="email" value=" Email">
-                <input type="text" id="phone" name="phone" value=" Phone">
+<!--            <form>-->
+<!--                <input type="text" id="fname" name="fname" value=" First Name"><br>-->
+<!--                <input type="text" id="lname" name="lname" value=" Last Name">-->
+<!--                <input type="text" id="email" name="email" value=" Email">-->
+<!--                <input type="text" id="phone" name="phone" value=" Phone">-->
+            <form action="" class="contact__form" id="contact-form">
+                <div class="contact__form-input">
+                    <input type="text" name="name" placeholder="Your Name " class="contact__input"
+                           id="contact-name">
+                </div>
 
-                <textarea id="textarea" rows = "6" cols = "53" name = "description"> Your Message</textarea>
+                <div class="contact__form-input">
+                    <input type="email" name="email" placeholder="Your Email" class="contact__input"
+                           id="contact-email">
+                </div>
 
-                <input id="submitbtn" type = "submit" value = "Submit Now" />
+                <div class="contact__form-input">
+                    <input type="text" name="subject" placeholder="Phone Number" class="contact__input"
+                           id="contact-subject">
+                </div>
+<!--                <textarea id="textarea" rows = "6" cols = "53" name = "description"> Your Message</textarea>-->
+                    <div class="contact__from-input">
+                            <textarea name="message" id="contact-message" class="contact__input textarea "
+                                      placeholder="Your Message"></textarea>
+                    </div>
+                <input id="submitbtn" type = "submit" value = "Submit Now">
+
             </form>
         </section>
 
@@ -377,6 +395,7 @@
 </body>
 
 <footer>
+
     <h3>Stay Connect with Me</h3>
     <div>
 <!--     <a href="https://www.freepik.com/search?color=yellow&format=search&query=assignment%20done%20gif%20logo"> <i class="fa-brands fa-instagram" style="color: black"></i></a>-->
