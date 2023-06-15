@@ -399,60 +399,98 @@
 </main>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
 <script>
-    //select the button and add an event to customer
-    $("#save-btn").click(function () {
-        saveCustomer();
-
-        loadAllCustomer();
-
-        bindRowClickEventsCustomer();
-
-        clearCustomer();
-
-        loadAllCustomerOption();
-
-        alert("Customer Successfully Saved!")
-
+    // //select the button and add an event to customer
+    // $("#save-btn").click(function () {
+    //     saveCustomer();
+    //
+    //     loadAllCustomer();
+    //
+    //     bindRowClickEventsCustomer();
+    //
+    //     clearCustomer();
+    //
+    //     loadAllCustomerOption();
+    //
+    //     alert("Customer Successfully Saved!")
+    //
+    // });
+    // function saveCustomer() {
+    //     //get typed values of input fields
+    //     let id = $("#txtCustID").val();
+    //     let name = $("#txtCustName").val();
+    //     let address = $("#txtCustAddress").val();
+    //     let salary = $("#txtCustSalary").val();
+    //
+    //     //let's print it
+    //     console.log(id, name, address, salary);
+    //     //catch the table body
+    //     let tBody = $("#tblCustomer");
+    //     // let's see how we should insert a table row using html format
+    //
+    //     //ok then, let's create the above row
+    //     let tr = $("<tr>");
+    //     //let's create another four columns
+    //     let col1 = $("<td>").text(id);
+    //     let col2 = $("<td>").text(name);
+    //     let col3 = $("<td>").text(address);
+    //     let col4 = $("<td>").text(salary);
+    //     //set 4 columns to the previously created row
+    //     tr.append(col1);
+    //     tr.append(col2);
+    //     tr.append(col3);
+    //     tr.append(col4);
+    //     //set the row to the table body
+    //     tBody.append(tr);
+    //     //Work done;
+    //     var customerArray =[];
+    //     var customerObj = {
+    //         id: id,
+    //         name: name,
+    //         address: address,
+    //         salary: salary
+    //     }
+    //     customerArray.push(customerObj);
+    //     console.log(customerObj);
+    // }
+    $(document).ready(function () {
+        // Save Customer Button Click Event
+        $("#save-btn").click(function () {
+            // Get input field values
+            let id = $("#txtCustID").val();
+            let name = $("#txtCustName").val();
+            let address = $("#txtCustAddress").val();
+            let salary = $("#txtCustSalary").val();
+            // Create table row
+            let row = $("<tr>");
+            row.append($("<td>").text(id));
+            row.append($("<td>").text(name));
+            row.append($("<td>").text(address));
+            row.append($("<td>").text(salary));
+            // Append row to table body
+            $("#tblCustomer").append(row);
+            // Clear form inputs
+            $("#txtCustID").val("");
+            $("#txtCustName").val("");
+            $("#txtCustAddress").val("");
+            $("#txtCustSalary").val("");
+        });
+        // Table Row Click Event
+        $("#tblCustomer").on("click", "tr", function () {
+            // Remove the selected class from all rows
+            $("#tblCustomer tr").removeClass("selected");
+            // Add the selected class to the clicked row
+            $(this).addClass("selected");
+            // Load data from the selected row into the form inputs
+            let id = $(this).find("td:eq(0)").text();
+            let name = $(this).find("td:eq(1)").text();
+            let address = $(this).find("td:eq(2)").text();
+            let salary = $(this).find("td:eq(3)").text();
+            $("#txtCustID").val(id);
+            $("#txtCustName").val(name);
+            $("#txtCustAddress").val(address);
+            $("#txtCustSalary").val(salary);
+        });
     });
-    function saveCustomer() {
-        //get typed values of input fields
-        let id = $("#txtCustID").val();
-        let name = $("#txtCustName").val();
-        let address = $("#txtCustAddress").val();
-        let salary = $("#txtCustSalary").val();
-
-        //let's print it
-        console.log(id, name, address, salary);
-        //catch the table body
-        let tBody = $("#tblCustomer");
-        // let's see how we should insert a table row using html format
-
-        //ok then, let's create the above row
-        let tr = $("<tr>");
-        //let's create another four columns
-        let col1 = $("<td>").text(id);
-        let col2 = $("<td>").text(name);
-        let col3 = $("<td>").text(address);
-        let col4 = $("<td>").text(salary);
-        //set 4 columns to the previously created row
-        tr.append(col1);
-        tr.append(col2);
-        tr.append(col3);
-        tr.append(col4);
-        //set the row to the table body
-        tBody.append(tr);
-        //Work done;
-        var customerArray =[];
-        var customerObj = {
-            id: id,
-            name: name,
-            address: address,
-            salary: salary
-        }
-        customerArray.push(customerObj);
-        console.log(customerObj);
-    }
-
 
     //select the button and add an event to Item
     $("#savebtn").click(function () {
