@@ -98,19 +98,19 @@
                 <form id="item-form px-2" >
                     <div class="m-3">
                         <label for="txtCustID" class="form-label">Customer ID</label>
-                        <input type="text" class="form-control " placeholder="C001" id="txtCustID">
+                        <input type="text" class="form-control "  id="txtCustID">
                     </div>
                     <div class="m-3">
                         <label for="txtCustName" class="form-label">Customer Name</label>
-                        <input type="text" class="form-control" placeholder="Nethmi" id="txtCustName" >
+                        <input type="text" class="form-control"  id="txtCustName" >
                     </div>
                     <div class="m-3">
                         <label for="txtCustAddress" class="form-label">Customer address</label>
-                        <input type="text" class="form-control" placeholder="Galle" id="txtCustAddress" >
+                        <input type="text" class="form-control" id="txtCustAddress" >
                     </div>
                     <div class="m-3">
                         <label for="txtCustSalary" class="form-label">Customer Salary</label>
-                        <input type="text" class="form-control" placeholder="35000.00" id="txtCustSalary" >
+                        <input type="text" class="form-control"   id="txtCustSalary" >
                     </div>
 
                     <div class="m-3 justify-content-center">
@@ -194,19 +194,19 @@
                 <form id="itemform px-2" >
                     <div class="m-3">
                         <label for="txtItemCode" class="form-label">Item Code</label>
-                        <input type="text" class="form-control " placeholder="I001" id="txtItemCode">
+                        <input type="text" class="form-control "  id="txtItemCode">
                     </div>
                     <div class="m-3">
                         <label for="txtItemName" class="form-label">Item Name</label>
-                        <input type="text" class="form-control" placeholder="Sugar" id="txtItemName" >
+                        <input type="text" class="form-control" id="txtItemName" >
                     </div>
                     <div class="m-3">
                         <label for="txtItemPrice" class="form-label">Item Price</label>
-                        <input type="text" class="form-control" placeholder="350.00" id="txtItemPrice" >
+                        <input type="text" class="form-control"  id="txtItemPrice" >
                     </div>
                     <div class="m-3">
                         <label for="txtQty" class="form-label">Item uantity on Hand</label>
-                        <input type="text" class="form-control" placeholder="35000.00" id="txtQty" >
+                        <input type="text" class="form-control"  id="txtQty" >
                     </div>
 
                     <div class="m-3 justify-content-center">
@@ -481,10 +481,11 @@
             // Add the selected class to the clicked row
             $(this).addClass("selected");
             // Load data from the selected row into the form inputs
-            let id = $(this).find("td:eq(0)").text();
-            let name = $(this).find("td:eq(1)").text();
-            let address = $(this).find("td:eq(2)").text();
-            let salary = $(this).find("td:eq(3)").text();
+            let id = $(this).children().eq(0).text();
+            let name = $(this).children().eq(1).text();
+            let address = $(this).children().eq(2).text();
+            let salary = $(this).children().eq(3).text();
+
             $("#txtCustID").val(id);
             $("#txtCustName").val(name);
             $("#txtCustAddress").val(address);
@@ -499,28 +500,60 @@
         let name = $("#txtItemName").val();
         let price = $("#txtItemPrice").val();
         let qty = $("#txtQty").val();
-        //let's print it
-        console.log(code, name, price, qty);
-        //catch the table body
-        let tBody = $("#tblItem");
-        // let's see how we should insert a table row using html format
 
-        //ok then, let's create the above row
-        let tr = $("<tr>");
-        //let's create another four columns
-        let col1 = $("<td>").text(code);
-        let col2 = $("<td>").text(name);
-        let col3 = $("<td>").text(price);
-        let col4 = $("<td>").text(qty);
-        //set 4 columns to the previously created row
-        tr.append(col1);
-        tr.append(col2);
-        tr.append(col3);
-        tr.append(col4);
-        //set the row to the table body
-        tBody.append(tr);
-        //Work done;
+        let row = $("<tr>");
+        row.append($("<td>").text(code));
+        row.append($("<td>").text(name));
+        row.append($("<td>").text(price));
+        row.append($("<td>").text(qty));
+
+        // Append row to table body
+        $("#tblItem").append(row);
+        // Clear form inputs
+        $("#txtItemCode").val("");
+        $("#txtItemName").val("");
+        $("#txtItemPrice").val("");
+        $("#txtQty").val("");
     });
+    // Table Row Click Event
+    $("#tblItem").on("click", "tr", function () {
+        // Remove the selected class from all rows
+        $("#tblItem tr").removeClass("selected");
+        // Add the selected class to the clicked row
+        $(this).addClass("selected");
+        // Load data from the selected row into the form inputs
+        let code = $(this).children().eq(0).text();
+        let name = $(this).children().eq(1).text();
+        let price = $(this).children().eq(2).text();
+        let qty = $(this).children().eq(3).text();
+
+        $("#txtItemCode").val(code);
+        $("#txtItemName").val(name);
+        $("#txtItemPrice").val(price);
+        $("#txtQty").val(qty);
+    });
+    //     //let's print it
+    //     console.log(code, name, price, qty);
+    //     //catch the table body
+    //     let tBody = $("#tblItem");
+    //     // let's see how we should insert a table row using html format
+    //
+    //     //ok then, let's create the above row
+    //     let tr = $("<tr>");
+    //     //let's create another four columns
+    //     let col1 = $("<td>").text(code);
+    //     let col2 = $("<td>").text(name);
+    //     let col3 = $("<td>").text(price);
+    //     let col4 = $("<td>").text(qty);
+    //     //set 4 columns to the previously created row
+    //     tr.append(col1);
+    //     tr.append(col2);
+    //     tr.append(col3);
+    //     tr.append(col4);
+    //     //set the row to the table body
+    //     tBody.append(tr);
+    //     //Work done;
+    // });
 
 
 </script>
