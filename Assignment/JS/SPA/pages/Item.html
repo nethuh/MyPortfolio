@@ -8,31 +8,33 @@
     <script src="../assets/js/bootstrap.js"></script>
 </head>
 
-<body class="container-fluid">
+<body>
 
 <!--Header-->
 <header id="headerSection">
-    <nav class="navbar navbar-expand-lg"style="background: #065606;">
+    <nav class="navbar navbar-expand-lg"style="background: #d60f0f;">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold text-danger" href="#">
+            <a class="navbar-brand fw-bold text-dark" href="#">
                 <img src="../assets/img/cart%20logo.png" alt="Bootstrap" width="40" height="40">POS System
             </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link text-white" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Customer.html">Customer</a>
+                        <a class="nav-link text-white" href="Customer.html">Customer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Item.html">Store</a>
+                        <a class="nav-link text-white" href="Item.html">Store</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="PlaceOrder.html">Order</a>
+                        <a class="nav-link text-white" href="PlaceOrder.html">Order</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="Button">Search</button>
                 </form>
             </div>
         </div>
@@ -51,7 +53,7 @@
 
                             <!-- Example single danger button -->
                             <div class="btn-group mx-2">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"style="background: #058105;">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"style="background: #d60f0f;">
                                     Code
                                 </button>
                                 <ul class="dropdown-menu">
@@ -61,12 +63,6 @@
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
                                 </ul>
                             </div>
-
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success me-2" type="Button">Search</button>
-                            <button class="btn btn-outline-primary" type="Button">Clear</button>
-                            <!--<button type="button" class="btn btn-success">Add New +</button>-->
-
                         </form>
                     </div>
                 </nav>
@@ -90,7 +86,7 @@
 
         <section id="inputSection" class="col-3 justify-content-center my-4 ">
             <section class="col-12 card">
-                <div class="badge bg-primary text-wrap fs-5 fw-semibold p-4">
+                <div class="badge bg-warning text-wrap fs-5 fw-semibold p-4">
                     Input Details
                 </div>
 
