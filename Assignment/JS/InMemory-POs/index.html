@@ -535,6 +535,69 @@
             $("#txtCustAddress").val("");
             $("#txtCustSalary").val("");
         });
+        function saveCustomer() {
+            //get typed values of input fields
+            let id = $("#txtCustID").val();
+            let name = $("#txtCustName").val();
+            let address = $("#txtCustAddress").val();
+            let salary = $("#txtCustSalary").val();
+
+            $("#txtCustID").val(id);
+            $("#txtCustName").val(name);
+            $("#txtCustAddress").val(address);
+            $("#txtCustSalary").val(salary);
+
+        }
+
+
+        //disable tag
+        $("#txtCustID,#txtCustName,#txtCustAddress,#txtCustSalary").keydown(function (e){
+
+        if(e.key=="Tab"){
+            e.preventDefault();
+        }
+    });
+
+        $("#txtCustID").keydown(function (e) {
+            if (e.key == "Enter") {
+                $("#txtCustName").focus();
+            }
+        });
+
+        $("#txtCustName").keydown(function (e) {
+            if (e.key == "Enter") {
+                $("#txtCustAddress").focus();
+            }
+        });
+
+        $("#txtCustAddress").keydown(function (e) {
+            if (e.key == "Enter") {
+                $("#txtCustSalary").focus();
+            }
+        });
+
+        $("#txtCustSalary").keydown(function (e) {
+            if (e.key == "Enter") {
+                //save customer
+                saveCustomer();
+            }
+        });
+
+        //
+        // $(document).keydown(function(event) {
+        //     let key = event.key;
+        //     let button = buttons.find(btn => btn.text() === key);
+        //
+        //     $("#txtCustID").val("");
+        //     $("#txtCustName").val("");
+        //     $("#txtCustAddress").val("");
+        //     $("#txtCustSalary").val("");
+        //     if (button) {
+        //         button.click();
+        //     } else if (key === 'Enter') {
+        //         $('#save-btn').click();
+        //     }
+        // });
 
         // $(document).ready(function () {
     //     // Save Customer Button Click Event
