@@ -2138,14 +2138,10 @@ footer> div >i:hover{
 /*----------responsive for Tablet --------*/
 @media all and (min-width: 425px) and (max-width: 768px) {
     header {
-        background: rgba(0, 0, 0, 0.73);
-        box-shadow: 0px -1px 8px 2px rgb(0, 0, 0);
-        position: fixed;
         width: 100%;
         top: 0;
         height: 41px;
         z-index: 20;
-        font-family: 'Poppins', sans-serif;
         font-size: 15px;
 
     }
@@ -2160,10 +2156,7 @@ footer> div >i:hover{
     }
 
     header > nav > ul > li {
-        display: inline-block;
-        cursor: pointer;
         padding: 10px;
-        font-family: 'Poppins', sans-serif;
         color: rgb(255, 255, 255);
         font-size: 11px;
     }
@@ -2171,20 +2164,15 @@ footer> div >i:hover{
 
     /*----------Home Styles--------*/
     .home {
-        position: relative;
         margin-top: 0;
         height: 443px;
         width: 100%;
         bottom: 22px;
-        background-image: url("../Assets/img/Backgrount1.jpg");
-        background-size: cover;
     }
 
     #home > aside {
-        position: absolute;
         padding-left: 57px;
         padding-top: 77px;
-        font-family: 'Poppins', sans-serif;
     }
 
     #home > section {
@@ -2216,25 +2204,15 @@ footer> div >i:hover{
     }
 
     #home > aside > button {
-        background-color: #EBE322;
-        border: none;
-        color: white;
         padding: 12px 82px;
         text-align: center;
-        text-decoration: none;
-        display: inline-block;
         border-radius: 16px;
         font-size: 18px;
         box-shadow: rgba(252, 237, 4, 0.19) 0px 80px 40px -2px;
         margin-top: 30px;
-        cursor: pointer;
-        text-decoration: white;
+
     }
 
-    #home > aside > button > a {
-        text-decoration: none;
-        color: white;
-    }
 
     #home > aside > nav > i {
         position: relative;
@@ -2258,8 +2236,6 @@ footer> div >i:hover{
 
     /*----------about--------*/
     #about > h1 {
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
         margin-bottom: 0;
         font-size: 35px;
         margin-top: 0;
@@ -3207,5 +3183,362 @@ footer> div >i:hover{
         font-size: 30px;
         margin-right: 120px;
     }
-
 }
+
+
+/*----------responsive for mobile medium--------*/
+@media all and (min-width: 320px) and (max-width: 375px) {
+    header {
+        background: rgba(0, 0, 0, 0.73);
+        box-shadow: 0px -1px 8px 2px rgb(0, 0, 0);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 25px;
+        z-index: 20;
+        font-size: 10px;
+    }
+    header > div {
+        padding: -20px;
+        padding-left: 7px;
+        font-size: 10px;
+        color: rgb(241, 242, 246);
+        text-shadow: 0.5px 0 #000000, 0 0.5px #000000, 0.5px 0 #000000, 0 0.5px #000000;
+        top: -3px;
+    }
+    header > nav > ul > li {
+        padding: 2px;
+        color: rgb(255, 255, 255);
+        font-size: 8px;
+    }
+    header > nav {
+        right: 2px;
+        top: -3px;
+    }
+    #home img {
+        width: 142px;
+        height: 121px;
+        margin-right: 677px;
+    }
+    .home {
+        margin-top: 0;
+        height: 226px;
+        width: 564px;
+        bottom: 26px;
+    }
+    #home > aside {
+        padding-left: 19px;
+        padding-top: 58px;
+    }
+    #home > aside >h1 {
+        font-size: 17px;
+        color: #f1f2f6;
+    }
+    #home > aside >h2 {
+        font-size: 13px;
+        margin-bottom: 0px;
+        color: #f1f2f6;
+    }
+    #home > aside >h3 {
+        font-size: 8px;
+        margin-top: 0px;
+        color: #f1f2f6;
+    }
+    #home > section {
+        padding-top: 63px;
+    }
+    #home > aside > button {
+        padding: 8px 45px;
+        border-radius: 10px;
+        font-size: 10px;
+        margin-top: 21px;
+    }
+    /*=======================About=======================*/
+
+    #about > h1 {
+        font-size: 20px;
+        margin-left: 51px;
+        margin-top: -19px;
+    }
+    #about >img {
+        padding-left: 2px;
+        padding-top: 30px;
+        width: 150px;
+        height: 150px;
+    }
+    #about > article {
+        padding-left: 154px;
+        padding-top: 17px;
+        /* font-family: 'Roboto Thin', sans-serif; */
+    }
+    #about > article > p {
+        width: 165px;
+        height: 106px;
+        font-size: 8px;
+    }
+    #about > article > h2 {
+        font-size: 13px;
+        width: 127px;
+    }
+    #about > article > h3 {
+        font-size: 10px;
+        margin-top: 0px;
+        width: 300px;
+    }
+    #about > article > ol {
+        margin-top: -37px;
+        height: 61px;
+        width: 135px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 3px 5px;
+    }
+    #about > article > ol> h5 {
+        font-size: 7px;
+        margin-bottom: -0.5rem;
+    }
+
+    /*=======================Education=======================*/
+
+    #education > h1 {
+        font-size: 20px;
+        margin-left: 51px;
+        margin-top: 40px;
+    }
+    #education > section > div:nth-child(1) {
+        width: 2px;
+        height: 242px;
+        left: 51%;
+        top: 54px;
+    }
+    #edu1 > img {
+        width: 245px;
+        height: 247px;
+    }
+    #education > section > div:nth-child(2) {
+        margin-top: 148px;
+        left: 48%;
+    }
+    #edu2 > img {
+        width: 245px;
+        height: 247px;
+    }
+    #education > section > div:nth-child(3) {
+        margin-top: 81px;
+        left: -37px;
+    }
+    #edu3 > img{
+        width: 245px;
+        height: 247px;
+    }
+    #education > section > div:nth-child(4) {
+        position: absolute;
+        margin-top: -2px;
+        left: 48%;
+    }
+    #education > section > div:nth-child(1) > section {
+        width: 37px;
+        height: 260px;
+        left: -18px;
+    }
+    #education > section > div:nth-child(1) > section > div {
+        width: 9px;
+        height: 7px;
+        border-radius: 47%;
+    }
+    /*=======================Skill=======================*/
+
+    #skills > h1 {
+        font-size: 20px;
+        margin-left: 51px;
+        margin-top: -371px;
+    }
+    #skills > section > aside {
+        height: 271px;
+        width: 335px;
+        border-radius: 5%;
+        left: 13px;
+    }
+    #skills > section > aside > h2 {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .skills img {
+        width: 55px;
+        height: 46px;
+    }
+    #skills >section {
+        display: flex;
+        column-gap: 8px;
+        margin-top: 60px;
+        margin-left: -5px;
+        flex-direction: column;
+    }
+    #technologies {
+        top: 31px;
+        left: 12px;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 2px;
+    }
+    #technologies > div > h3 {
+        font-size: 10px;
+        padding-right: 71px;
+    }
+    #skills > section > aside >section {
+        height: 500px;
+        width: 285px;
+        border-radius: 10%;
+    }
+    #softwares {
+        top: 20px;
+        left: 24px;
+    }
+    #softwares > div > h3 {
+        font-size: 10px;
+    }
+    /*=======================Project=======================*/
+
+    #projects > h1 {
+        font-size: 20px;
+        margin-left: 51px;
+        margin-top: 31px;
+    }
+    .projects section img {
+        width: 120px;
+        height: 120px;
+    }
+    .projects section {
+        gap: 6px;
+        margin-left: 1px;
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+    .projects h5 {
+        font-size: 10px;
+    }
+    /*=======================Assignment=======================*/
+
+    #assignment > h1 {
+        font-size: 20px;
+        margin-left: 51px;
+        margin-top: -22px;
+    }
+    .assignment h2 {
+        margin-top: 22px;
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    .assignment img {
+        width: 70px;
+        height: 70px;
+    }
+    #Css {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 14px;
+        margin-left: 56px;
+        margin-right: 32px;
+    }
+    .assignment h3 {
+        margin-left: 11px;
+        font-size: 12px;
+    }
+    #Animation {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 14px;
+        margin-left: 56px;
+        margin-right: 32px;
+    }
+    #JS {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 14px;
+        margin-left: 56px;
+        margin-right: 32px;
+    }
+    /*=======================Contact=======================*/
+
+    #contact > h1 {
+        font-size: 20px;
+        margin-left: 51px;
+        margin-top: 14px;
+    }
+    #details {
+        height: 550px;
+        width: 336px;
+        border-radius: 50px;
+        margin-top: 27px;
+        margin-left: 28px;
+    }
+    #details > h3:nth-child(2) {
+        font-size: 18px;
+        margin-top: 35px;
+        left: -83px;
+    }
+    .bubble img {
+        width: 53px;
+    }
+    #details > section > address > div {
+        top: 80px;
+        font-size: 10px;
+        margin-top: -6px;
+        margin-left: 63px;
+        padding-top: 20px;
+    }
+    #details >section > div > div:nth-child(1) >i {
+        font-size: 15px;
+        margin-left: 8px;
+        margin-top: 6px;
+    }
+    #details >section > div > div {
+        height: 25px;
+        width: 25px;
+    }
+    #details > section > div {
+        height: 171px;
+        width: 50px;
+        top: 86px;
+        left: 14px;
+    }
+    #details >section > div > div >i {
+        font-size: 15px;
+        margin-left: 6px;
+        margin-top: 6px;
+    }
+    #details > form {
+        left: -64px;
+        top: 173px;
+    }
+    .contact__input {
+        width: 351px;
+        border-radius: 24px;
+        font-size: 19px;
+        margin-bottom: 0.5rem;
+    }
+    #details > h3 {
+        font-size: 20px;
+        margin-top: 243px;
+        margin-left: 100px;
+
+    }
+    #submitbtn {
+        border-radius: 16px;
+        font-size: 20px;
+        margin-top: 3px;
+    }
+
+    /*=======================Footer=======================*/
+    footer > h3 {
+        font-size: 18px;
+        padding-top: 22px;
+        width: 102vw;
+    }
+    footer > div {
+        font-size: 30px;
+        margin-right: 120px;
+    }
+}
+
+/*@media all and (min-width: 375px) and (max-width: 375px) {*/
+
