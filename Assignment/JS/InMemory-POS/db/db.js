@@ -1,1 +1,2 @@
 var customerArray =[];
+var itemArray =[];

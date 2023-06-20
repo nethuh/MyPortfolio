@@ -5,6 +5,7 @@
   <title>POS</title>
 
   <link rel="stylesheet" href="../SPA/assets/css/bootstrap.min.css">
+  <script src="model/customer.js"></script>
 
 
 </head>
@@ -34,8 +35,8 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button id="Search-btn" class="btn btn-outline-light" type="Button">Search</button>
+<!--          <input id="customerSearchTxt" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--          <button id="Search-btn" class="btn btn-outline-light" type="Button">Search</button>-->
         </form>
       </div>
     </div>
@@ -65,6 +66,8 @@
                   <li><a class="dropdown-item" href="#">Separated link</a></li>
                 </ul>
               </div>
+              <input class="form-control me-2" id="customerSearchTxt" type="search" placeholder="Search" aria-label="Search" >
+              <button class="btn btn-outline-danger me-2" id="customerSearch-btn" type="Button">Search</button>
             </form>
           </div>
         </nav>
@@ -158,6 +161,8 @@
                   <li><a class="dropdown-item" href="#">Separated link</a></li>
                 </ul>
               </div>
+              <input class="form-control me-2" id="itemSearchTxt" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger me-2" id="itemSearch-btn" type="Button">Search</button>
             </form>
           </div>
         </nav>
@@ -423,8 +428,14 @@
 <script src="assets/js/jquery-3.7.0.min.js"></script>
 <!--script for page Navigation-->
 <script src="script.js"></script>
-<script src="../InMemory-POS/controller/customerController.js"></script>
-<script src="db/db.js"></script>
 
+<!--script for customer -->
+<script src="../InMemory-POS/controller/customerController.js"></script>
+<script src="model/customer.js"></script>
+<!--script for database-->
+<script src="db/db.js"></script>
+<!--script for item -->
+<script src="../InMemory-POS/controller/storeController.js"></script>
+<script src="model/item.js"></script>
 </body>
 </html>

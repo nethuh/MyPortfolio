@@ -19,12 +19,7 @@ function saveCustomer(){
     let customerAddress = $("#txtCustAddress").val();
     let customerSalary = $("#txtCustSalary").val();
 
-    var customerObj = {
-        id: customerID,
-        name: customerName,
-        address: customerAddress,
-        salary: customerSalary
-    }
+    var customerObj = setCustomer(customerID, customerName, customerAddress, customerSalary);
 
     customerArray.push(customerObj);
     /*bindRowClickEvents();
@@ -88,6 +83,30 @@ function bindRowClickEventsCustomer() {
 
 
 //customer search button event
+$('#customerSearch-btn').click(function(){
+    let typedId = $("#customerSearchTxt").val();
+    let customer = searchCustomer(typedId);
+    if (customer != null) {
+        $('#txtCustId').val(customer.id);
+        $('#txtCustName').val(customer.name);
+        $('#txtCustAddress').val(customer.address);
+        $('#txtCustSalary').val(customer.salary);
+    } else {
+        Swal.fire("Not Available Customer for " + typedId)
+        setTextfieldValues("", "", "", "");
+    }
+})
+
+//customer search function
+function searchCustomer(custID) {
+    for (let customer of customerArray) {
+        if (customer.id== custID) {
+            return customer;
+            console.log(customer)
+        }
+    }
+    return null;
+}
 
 //customer delete button event
 $('#customerDelete-btn').click(function (){
@@ -164,3 +183,88 @@ function updateCustomer(customerID){
         return false
     }
 }
+
+//enter key focus event and validations
+$('#txtCustID').focus();
+$('#txtCustID').on('keydown',function(event){
+    if(event.key=='Enter'){
+        var id = /^(C)[0-9]{3}$/;
+        var result = id.test($("#txtCustID").val());
+        if (result) {
+            $("#txtCustID").css({
+                'border': '2px solid green'
+            })
+            $('#txtCustName').focus();
+        } else {
+            $("#txtCustID").css({
+                'border-color': 'red'
+            })
+
+            $('#txtCustID').error='Customer ID Pattern is Wrong : C00-001'
+        }
+    }
+})
+$('#txtCustName').on('keydown',function(event){
+    if(event.key=='Enter'){
+        var Name = /^[A-z ]{3,15}$/;
+        var result = Name.test($("#txtCustName").val());
+        console.log(result);
+
+        if (result) {
+            $("#txtCustName").css({
+                'border-color': 'green'
+            })
+            $('#txtCustAddress').focus();
+        } else {
+            $("#txtCustName").css({
+                'border-color': 'red'
+            })
+        }
+    }
+})
+$('#txtCustAddress').on('keydown',function(event){
+    if(event.key=='Enter'){
+        var address=/^[A-z0-9 ,/]{4,20}$/
+        var result=address.test($('#txtCustAddress').val())
+        if(result){
+            $('#txtCustAddress').css({
+                'border-color': 'green'
+            })
+            $('#txtCustSalary').focus();
+        }
+        else{
+            $('#txtCustAddress').css({
+                'border-color': 'red'
+            })
+        }
+    }
+})
+$('#txtCustSalary').on('keydown',function(event){
+    if(event.key=='Enter'){
+        var salary=/^[1-9][0-9]*(.[0-9]{2})?$/;
+        var result=salary.test($("#txtCustSalary").val())
+        if (result){
+            $('#txtCustSalary').css({
+                'border-color': 'green'
+            })
+            confirm('Do you want to save this customer')
+            saveCustomer();
+            loadAllCustomers();
+            clear();
+        }
+        else{
+            $('#txtCustSalary').css({
+                'border-color': 'red'
+            })
+        }
+    }
+})
+
+////disable tab key of all  text fields
+$('#txtCustId,#txtCustName,#txtCustAddress,#txtCustSalary').on('keydown',function(event){
+    if(event.key=='Tab'){
+        event.preventDefault();
+    }
+})
+
+
