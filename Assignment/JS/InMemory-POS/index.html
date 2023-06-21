@@ -43,6 +43,53 @@
   </nav>
 </header>
 
+<!-- dashboard section-->
+<section class="container" id="dashBoardSection">
+
+  <h1 class="p-5"> Welcome to POS System</h1>
+
+  <!-- card selector menu -->
+  <div class="row g-5">
+
+    <!-- card 1 -->
+    <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/img/Cust.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Manage Customers</h5>
+          <p class="card-text">Options for handling customer details</p>
+          <a href="#http://localhost:63342/MyPortfolio/Assignment/JS/InMemory-POS/index.html?_ijt=dpoo81d3b6or8i443dce3r2sh#customerSection" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 2-->
+    <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/img/Store.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Manage Items</h5>
+          <p class="card-text">Options for manage the store details</p>
+          <a href="#http://localhost:63342/MyPortfolio/Assignment/JS/InMemory-POS/index.html?_ijt=dpoo81d3b6or8i443dce3r2sh&#storeSection" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="col-12 col-lg-4 d-flex justify-content-center mb-3">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/img/Cart.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Purchase Order</h5>
+          <p class="card-text">Option for Place Order and Make Payment</p>
+          <a href="#http://localhost:63342/MyPortfolio/Assignment/JS/InMemory-POS/index.html?_ijt=dpoo81d3b6or8i443dce3r2sh#placeOrderSection" class="btn btn-primary">Click Here</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!--Manage Customers-->
 
 <main class="justify-content-center mt-4 align-content-center" id="customerSection">
@@ -239,7 +286,7 @@
 
     <!-- invoice content -->
     <section class="col-10 col-md-5 col-lg-4 p-3 mt-4 bg-white shadow-lg">
-      <h3 class="text-center bg-primary p-2 text-light rounded-3 fs-4">Invoice Details</h3>
+      <h3 class="text-center bg-warning p-2 text-light rounded-3 fs-4">Invoice Details</h3>
       <div class="row mt-1">
         <div class="col-12 col-md-6 col-lg-6">
           <label for="orderId" class="form-label">Order ID :</label>
@@ -280,7 +327,7 @@
 
     <!-- select items content -->
     <section class="col-10 col-md-5 col-lg-4 p-3 mt-4 bg-white shadow-lg">
-      <h3 class="text-center bg-primary p-2 text-light rounded-3 fs-4">Select Items</h3>
+      <h3 class="text-center bg-warning p-2 text-light rounded-3 fs-4">Select Items</h3>
       <div class="row mt-1">
         <div class="col-12 col-md-6 col-lg-6">
           <label for="itemCodeCMB" class="form-label">Item Code :</label>
@@ -315,7 +362,7 @@
       </div>
       <div class="container-fluid justify-content-end d-flex" style="padding: 0;">
         <button style="width: max-content; height: max-content; font-weight: bold;"
-                class="btn btn-secondary text-white"
+                class="btn btn-success text-white"
                 type="button" id="btnAddToCart">Add To Cart
           <i style="padding-left: 4px;" class="fa-solid fa-cart-arrow-down"></i>
         </button>
@@ -380,10 +427,10 @@
     <!--Cart Details Table-->
     <section class="d-flex flex-column h-50 col-10 col-xl-11 bg-white shadow-lg align-items-center
         pt-3 mt-4 table-bordered table-hover table-responsive">
-      <h3 class="text-center bg-primary p-2 text-light rounded-3 col-12 fs-4">Order Details</h3>
+      <h3 class="text-center bg-warning p-2 text-light rounded-3 col-12 fs-4">Order Details</h3>
       <div class="row overflow-auto h-60 col-12 col-lg-12 rounded-2 justify-content-around">
         <table class="table table-striped table-hover mb-4 table-dark" style="height: 20px;">
-          <thead class="text-white green-hd" style="background: #efcf02;">
+          <thead class="text-white green-hd" >
           <tr>
             <th>Item Code</th>
             <th>Item Name</th>
@@ -428,7 +475,6 @@
 <script src="assets/js/jquery-3.7.0.min.js"></script>
 <!--script for page Navigation-->
 <script src="script.js"></script>
-
 <!--script for customer -->
 <script src="../InMemory-POS/controller/customerController.js"></script>
 <script src="model/customer.js"></script>
@@ -437,5 +483,10 @@
 <!--script for item -->
 <script src="../InMemory-POS/controller/storeController.js"></script>
 <script src="model/item.js"></script>
+<!--script for order -->
+<script src="controller/orderController.js"></script>
+<script src="model/order.js"></script>
+<script src="controller/orderDetailsController.js"></script>
+
 </body>
 </html>

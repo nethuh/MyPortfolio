@@ -8,6 +8,8 @@ $("#customerSave-btn").click(function (){
 
     clearCustomer();
 
+    loadAllCustomerOption();
+
     alert("Customer Successfully Saved!")
 
 });
