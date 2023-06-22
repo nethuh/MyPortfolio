@@ -13,7 +13,6 @@ function loadAllItemOption(){
         $('#itemCodeCMB').append(`<option>${item.code}</option>`);
     }
 }
-
 //customer combobox click and set value textfeild
 $('#custIDCMB').click(function(){
     let val= $('#custIDCMB').val()
