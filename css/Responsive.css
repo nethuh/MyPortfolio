@@ -56,58 +56,33 @@
 @media all and (min-width: 768px) and (max-width:  1024px) {
 
     header {
-        background: rgba(0, 0, 0, 0.73);
-        box-shadow: 0px -1px 8px 2px rgb(0, 0, 0);
-        position: fixed;
-        width: 100%;
-        top: 0;
         height: 51px;
-        z-index: 20;
-        font-family: 'Poppins', sans-serif;
         font-size: 15px;
-
     }
 
-
     header > div {
-        padding: -20px;
-        padding-left: 100px;
         font-size: 15px;
-        color: rgb(241, 242, 246);
-        text-shadow: 0.5px 0 #000000, 0 0.5px #000000, 0.5px 0 #000000, 0 0.5px #000000;
     }
 
     header > nav > ul > li {
-        display: inline-block;
-        cursor: pointer;
-        padding: 10px;
-        font-family: 'Poppins', sans-serif;
-        color: rgb(255, 255, 255);
         font-size: 13px;
     }
 
 
     /*----------Home Styles--------*/
     .home {
-        position: relative;
-        margin-top: 0;
         height: 531px;
         width: 100%;
         bottom: 22px;
-        background-image: url("../Assets/img/Backgrount1.jpg");
-        background-size: cover;
     }
 
     #home > aside {
-        position: absolute;
         padding-left: 85px;
         padding-top: 107px;
-        font-family: 'Poppins', sans-serif;
     }
 
     #home > section {
         padding-top: 68px;
-        padding-left: 1000px;
     }
 
     .home img {
@@ -117,57 +92,19 @@
 
     #home > aside > h1 {
         font-size: 50px;
-        color: #f1f2f6;
-
-    }
+        }
 
     #home > aside > h2 {
         font-size: 40px;
-        margin-bottom: 0;
-        color: #f1f2f6;
-    }
+         }
 
     #home > aside > h3 {
         font-size: 25px;
-        margin-top: 0px;
-        color: #f1f2f6;
-    }
+        }
 
     #home > aside > button {
-        background-color: #EBE322;
-        border: none;
-        color: white;
-        padding: 12px 82px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 16px;
         font-size: 20px;
-        box-shadow: rgba(252, 237, 4, 0.19) 0px 80px 40px -2px;
         margin-top: 30px;
-        cursor: pointer;
-        text-decoration: white;
-    }
-
-    #home > aside > button > a {
-        text-decoration: none;
-        color: white;
-    }
-
-    #home > aside > nav > i {
-        position: relative;
-        background-color: #EBE322;
-        color: white;
-        width: 50px;
-        height: 50px;
-        font-size: 40px;
-        border-radius: 100%;
-        padding-top: 11px;
-        padding-left: 11px;
-        margin-left: 15px;
-        margin-right: 15px;
-        top: 120px;
-        cursor: pointer;
     }
 
     #home > aside > nav > i:nth-child(4) {
@@ -176,27 +113,17 @@
 
     /*----------about--------*/
     #about > h1 {
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
-        margin-bottom: 0;
         font-size: 40px;
-        margin-top: 0;
     }
 
-    /*#about > div{*/
-    /*    margin-top: 0;*/
-    /*    margin-left: 700px;*/
-    /*}*/
     #about > img {
         padding-left: 28px;
         padding-top: 31px;
-        position: absolute;
         width: 350px;
         height: 350px;
     }
 
     #about > article {
-        position: relative;
         padding-left: 435px;
         padding-top: 3px;
         /*font-family: 'Roboto Thin', sans-serif;*/
@@ -209,11 +136,8 @@
 
     #about > article > ol {
         margin-top: 50px;
-        background-color: white;
         height: 165px;
         width: 360px;
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 15px;
         border-radius: 40px;
     }
 
@@ -235,9 +159,6 @@
 
     /*----------education--------*/
     #education > h1 {
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 0;
         font-size: 40px;
         margin-top: 58px;
     }
@@ -250,14 +171,11 @@
     #education > section {
         height: 100vh;
         width: 98vw;
-        position: relative;
     }
 
     #education > section > div:nth-child(1) { /*Edu wala meda thiyana ira*/
         width: 3px;
         height: 550px;
-        position: absolute;
-        background: #fced04;
         left: 50%;
         top: 34px;
     }
@@ -265,19 +183,12 @@
     #education > section > div:nth-child(1) > section {
         width: 40px;
         height: 600px;
-        position: relative;
         left: -18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
     }
 
     #education > section > div:nth-child(1) > section > div { /* Rawum 3*/
         width: 12px;
         height: 12px;
-        background-color: white;
-        border: #fced04 solid 4px;
         border-radius: 50%;
     }
 
@@ -320,9 +231,6 @@
 
     /*----------Skill Styles--------*/
     #skills > h1 {
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 0;
         font-size: 40px;
         margin-top: 0;
     }
@@ -331,31 +239,22 @@
         margin-left: 800px;
         width: 3px;
         height: 600px;
-        position: relative;
     }
 
     #skills > section {
-        display: flex;
-        align-items: center;
         column-gap: 30px;
         margin-top: 60px;
-        alignment: center;
-        margin-left: 26px;
 
     }
 
     #skills > section > aside {
         height: 480px;
         width: 470px;
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
         border-radius: 10%;
         left: 10px;
     }
 
     #skills > section > aside > h2 {
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
         margin-bottom: 0;
         font-size: 25px;
         margin-top: 35px;
@@ -370,20 +269,11 @@
     }
 
     #technologies {
-        position: relative;
         top: 50px;
         left: 35px;
-        margin: auto;
-        display: grid;
-        /*border: 2px solid red;*/
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3px;
     }
 
     #technologies > div > h3 {
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
         font-size: 15px;
         padding-right: 50px;
     }
@@ -401,30 +291,16 @@
     }
 
     #softwares > div > h3 {
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
         font-size: 15px;
     }
 
-    #skills > section > aside:hover {
-        transform: scale(1.05);
-    }
 
     /*----------Projects Styles--------*/
     #projects > h1 {
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 0;
         font-size: 45px;
         margin-top: 110px;
     }
 
-    /*#projects > div{*/
-    /*    margin-left: 720px;*/
-    /*    width :3px;*/
-    /*    height: 600px;*/
-    /*    position: relative;*/
-    /*}*/
     .projects section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -441,18 +317,10 @@
 
     .projects h5 {
         font-size: 15px;
-        font-family: "Roboto Thin", sans-serif;
-    }
-
-    .projects section img:hover {
-        transform: scale(1.05);
     }
 
     /*----------Assigment-------------*/
     .assignment h1 {
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        margin-bottom: 0;
         font-size: 40px;
         margin-top: 40px;
     }
@@ -465,64 +333,26 @@
     .assignment h2 {
         margin-top: 35px;
         margin-bottom: 40px;
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
         font-size: 30px;
 
     }
 
     .assignment h3 {
         margin-left: 20px;
-        /*text-align: center;*/
-        font-family: "Roboto Thin", sans-serif;
         font-size: 22px;
     }
 
-    #Css {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        /*grid-template-rows:repeat(2,1fr) ;*/
-        gap: 25px;
-        margin-left: 150px;
-        margin-right: 70px;
-    }
-
-    #Animation {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 25px;
-        margin-left: 150px;
-        margin-right: 70px;
-    }
-
-    .assignment img:hover {
-        transform: scale(1.15);
-    }
 
     /*----------Contact Styles--------*/
     #contact > h1 {
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 0;
         font-size: 40px;
         margin-top: 60px;
     }
 
-    #contact > div {
-        margin-top: 0px;
-        margin-left: 700px;
-    }
-
     #details {
-        background-color: white;
         height: 455px;
         width: 954px;
-        position: relative;
-        box-shadow: rgba(252, 237, 4, 0.49) 0px 8px 24px;
-        border-radius: 50px;
-        margin-top: 70px;
         margin-left: 39px;
-        z-index: 6;
     }
 }
 
