@@ -21,11 +21,41 @@
     <meta name="theme-color" content="yellow">
     <link rel="stylesheet" href="css/Responsive.css">
 
+    <style>
+        #loader {
+            transition: opacity 1s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #f9f5f1;
+        }
+
+        #loader > div {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: url("Assets/img/loader.gif");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
 </head>
 
 <body>
 <br>
 <header>
+    <div id="loader">
+        <div></div>
+    </div>
+
     <div>
         <p><font color="yellow">Nethu </font></p>
     </div>
@@ -42,9 +72,9 @@
         </ul>
     </nav>
 </header>
+
+
 <main>
-
-
     <section class="home" id="home">
         <aside>
             <h1 class="anim">Hello There,</h1>
@@ -392,20 +422,34 @@
         <section id="bg1"></section>
 
     </section>
+
 </main>
+
 </body>
 
 <footer>
 
     <h3>Stay Connect with Me</h3>
     <div>
-<!--     <a href="https://www.freepik.com/search?color=yellow&format=search&query=assignment%20done%20gif%20logo"> <i class="fa-brands fa-instagram" style="color: black"></i></a>-->
+      <i href="https://www.instagram.com/_smileyx___/?next=%2F" class="fa-brands fa-instagram" style="color: black"></i></a>
         <i class="fa-brands fa-facebook-f" style="color: black"></i>
         <i class="fa-brands fa-github" style="color: black"></i>
         <i class="fa-brands fa-whatsapp" style="color: black"></i>
     </div>
 </footer>
+<script>
 
+    let loader = document.getElementById("loader");
+    //this is it. this will execute after the window is fully loaded
+    window.addEventListener("load", function () {
+        console.log("This message will print just after fully loading the website")
+
+        //hide the loader
+        loader.style.display = 'none';
+    });
+
+
+</script>
 </html>
 
 

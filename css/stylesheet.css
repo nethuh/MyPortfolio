@@ -8,6 +8,7 @@ body::-webkit-scrollbar{
 
 }
 
+
 header{
     background: rgba(0, 0, 0, 0.73);
     box-shadow: 0px -1px 8px 2px rgb(0, 0, 0);
@@ -619,52 +620,6 @@ main{
     top : 0px;
     transform: scale(.6);
 }
-
-/*#fname{*/
-/*    padding:10px;*/
-/*    border:0;*/
-/*    font-family: 'Roboto Thin', sans-serif;*/
-/*    font-size: 24px;*/
-/*    border-radius: 20px;*/
-/*    background-color:#f1f2f6 ;*/
-/*}*/
-
-/*#lname{*/
-/*    padding:10px;*/
-/*    border:0;*/
-/*    font-family: 'Roboto Thin', sans-serif;*/
-/*    font-size: 24px;*/
-/*    border-radius: 20px;*/
-/*    background-color:#f1f2f6 ;*/
-/*    position: relative;*/
-/*    bottom:55px;*/
-/*    left: 500px;*/
-/*}*/
-
-/*#email{*/
-/*    padding:10px;*/
-/*    border:0;*/
-/*    font-family: 'Roboto Thin', sans-serif;*/
-/*    font-size: 24px;*/
-/*    border-radius: 20px;*/
-/*    background-color:#f1f2f6 ;*/
-/*    position: relative;*/
-/*    right: 325px;*/
-/*    top: 60px;*/
-/*}*/
-
-/*#phone{*/
-/*    padding:10px;*/
-/*    border:0;*/
-/*    font-family: 'Roboto Thin', sans-serif;*/
-/*    font-size: 24px;*/
-/*    border-radius: 20px;*/
-/*    background-color:#f1f2f6 ;*/
-/*    position: relative;*/
-/*    bottom: 55px;*/
-/*    left: 500px;*/
-/*    top: 8px;*/
-/*}*/
 
 #submitbtn{
     background-color: #fced04;

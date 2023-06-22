@@ -1150,15 +1150,6 @@
         z-index: 6;
     }
 }
-/*#bg1{*/
-/*    background-color: #fced04;*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    top:4350px;*/
-/*    height: 380px;*/
-/*    z-index: 5;*/
-/*}*/
-
 
 /*----------responsive for Tablet --------*/
 @media all and (min-width: 425px) and (max-width: 768px) {
@@ -1168,9 +1159,7 @@
         height: 41px;
         z-index: 20;
         font-size: 15px;
-
     }
-
 
     header > div {
         padding: -20px;
@@ -1185,7 +1174,6 @@
         color: rgb(255, 255, 255);
         font-size: 11px;
     }
-
 
     /*----------Home Styles--------*/
     .home {
@@ -1266,10 +1254,6 @@
         margin-top: 0;
     }
 
-    /*#about > div{*/
-    /*    margin-top: 0;*/
-    /*    margin-left: 700px;*/
-    /*}*/
     #about > img {
         padding-left: 28px;
         padding-top: 31px;
@@ -1505,12 +1489,6 @@
         margin-top: 110px;
     }
 
-    /*#projects > div{*/
-    /*    margin-left: 720px;*/
-    /*    width :3px;*/
-    /*    height: 600px;*/
-    /*    position: relative;*/
-    /*}*/
     .projects section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1684,94 +1662,6 @@
         transform: scale(.6);
     }
 
-    #fname {
-        padding: 10px;
-        border: 0;
-        font-family: 'Roboto Thin', sans-serif;
-        font-size: 20px;
-        border-radius: 20px;
-        background-color: #f1f2f6;
-    }
-
-    #lname {
-        padding: 10px;
-        border: 0;
-        font-family: 'Roboto Thin', sans-serif;
-        font-size: 20px;
-        border-radius: 20px;
-        background-color: #f1f2f6;
-        position: relative;
-        bottom: 55px;
-        left: 373px;
-    }
-
-    #email {
-        padding: 10px;
-        border: 0;
-        font-family: 'Roboto Thin', sans-serif;
-        font-size: 20px;
-        border-radius: 20px;
-        background-color: #f1f2f6;
-        position: relative;
-        right: 275px;
-        top: 60px;
-    }
-
-    #phone {
-        padding: 10px;
-        border: 0;
-        font-family: 'Roboto Thin', sans-serif;
-        font-size: 20px;
-        border-radius: 20px;
-        background-color: #f1f2f6;
-        position: relative;
-        bottom: 55px;
-        left: 373px;
-        top: 8px;
-    }
-
-    #submitbtn {
-        background-color: #fced04;
-        border: none;
-        color: white;
-        padding: 12px 82px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 16px;
-        font-size: 23px;
-        margin-top: 110px;
-        font-family: 'Roboto Thin', sans-serif;
-    }
-
-    #textarea {
-        padding: 10px;
-        border: 0;
-        font-family: 'Roboto Thin', sans-serif;
-        font-size: 20px;
-        border-radius: 20px;
-        background-color: #f1f2f6;
-        position: relative;
-        top: 70px;
-    }
-
-    .bubble img {
-        width: 135px;
-        animation: bubble 6s linear infinite;
-    }
-
-    .bubble {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: absolute;
-        bottom: 0;
-        /*left: 550px;*/
-        top: 700px;
-    }
-
-
 
     /*----------footer Styles--------*/
     footer {
@@ -1846,11 +1736,6 @@
         margin-right: 0px;
 
 
-    }
-
-    footer > div > i:hover {
-        transform: scale(1.2);
-        box-shadow: rgba(227, 200, 73, 0.55) 0px 7px 29px 0px;
     }
 
 }
