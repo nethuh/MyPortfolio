@@ -359,24 +359,18 @@
 /*----------responsive for Tablet --------*/
 @media all and (min-width: 425px) and (max-width: 768px) {
     header {
-        width: 100%;
-        top: 0;
         height: 41px;
         z-index: 20;
-        font-size: 15px;
     }
 
     header > div {
         padding: -20px;
         padding-left: 39px;
         font-size: 12px;
-        color: rgb(241, 242, 246);
-        text-shadow: 0.5px 0 #000000, 0 0.5px #000000, 0.5px 0 #000000, 0 0.5px #000000;
     }
 
     header > nav > ul > li {
         padding: 10px;
-        color: rgb(255, 255, 255);
         font-size: 11px;
     }
 
@@ -423,33 +417,10 @@
 
     #home > aside > button {
         padding: 12px 82px;
-        text-align: center;
         border-radius: 16px;
         font-size: 18px;
-        box-shadow: rgba(252, 237, 4, 0.19) 0px 80px 40px -2px;
         margin-top: 30px;
 
-    }
-
-
-    #home > aside > nav > i {
-        position: relative;
-        background-color: #EBE322;
-        color: white;
-        width: 50px;
-        height: 50px;
-        font-size: 40px;
-        border-radius: 100%;
-        padding-top: 11px;
-        padding-left: 11px;
-        margin-left: 15px;
-        margin-right: 15px;
-        top: 120px;
-        cursor: pointer;
-    }
-
-    #home > aside > nav > i:nth-child(4) {
-        font-size: 35px;
     }
 
     /*----------about--------*/
@@ -462,13 +433,11 @@
     #about > img {
         padding-left: 28px;
         padding-top: 31px;
-        position: absolute;
         width: 300px;
         height: 300px;
     }
 
     #about > article {
-        position: relative;
         padding-left: 361px;
         padding-top: 3px;
         /*font-family: 'Roboto Thin', sans-serif;*/
@@ -481,11 +450,8 @@
 
     #about > article > ol {
         margin-top: 50px;
-        background-color: white;
         height: 144px;
         width: 278px;
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 15px;
         border-radius: 40px;
     }
 
@@ -507,29 +473,23 @@
 
     /*----------education--------*/
     #education > h1 {
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 0;
         font-size: 35px;
         margin-top: 58px;
     }
 
     #education > div {
-        margin-top: 0px;
+        margin-top: 0;
         margin-left: 700px;
     }
 
     #education > section {
         height: 84vh;
         width: 98vw;
-        position: relative;
     }
 
     #education > section > div:nth-child(1) { /*Edu wala meda thiyana ira*/
         width: 3px;
         height: 500px;
-        position: absolute;
-        background: #fced04;
         left: 50%;
         top: 34px;
     }
@@ -537,19 +497,12 @@
     #education > section > div:nth-child(1) > section {
         width: 40px;
         height: 491px;
-        position: relative;
         left: -18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
     }
 
     #education > section > div:nth-child(1) > section > div { /* Rawum 3*/
         width: 12px;
         height: 12px;
-        background-color: white;
-        border: #fced04 solid 4px;
         border-radius: 50%;
     }
 
@@ -586,15 +539,9 @@
         height: 450px;
     }
 
-    .education section img:hover {
-        transform: scale(1.05);
-    }
 
     /*----------Skill Styles--------*/
     #skills > h1 {
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 0;
         font-size: 40px;
         margin-top: 0;
     }
@@ -603,17 +550,11 @@
         margin-left: 800px;
         width: 3px;
         height: 600px;
-        position: relative;
     }
 
     #skills > section {
-        display: flex;
-        align-items: center;
         column-gap: 30px;
         margin-top: 60px;
-        alignment: center;
-        margin-left: 26px;
-
     }
     .skills img {
         width: 75px;
@@ -622,16 +563,11 @@
     #skills > section > aside {
         height: 359px;
         width:338px;
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
         border-radius: 10%;
         left: 10px;
     }
 
     #skills > section > aside > h2 {
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
-        margin-bottom: 0;
         font-size: 25px;
         margin-top: 35px;
 
@@ -657,8 +593,6 @@
     }
 
     #technologies > div > h3 {
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
         font-size: 15px;
         padding-right: 50px;
     }
@@ -680,16 +614,8 @@
         font-family: 'Roboto Thin', sans-serif;
         font-size: 15px;
     }
-
-    #skills > section > aside:hover {
-        transform: scale(1.05);
-    }
-
     /*----------Projects Styles--------*/
     #projects > h1 {
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 0;
         font-size: 35px;
         margin-top: 110px;
     }
@@ -710,18 +636,10 @@
 
     .projects h5 {
         font-size: 12px;
-        font-family: "Roboto Thin", sans-serif;
-    }
-
-    .projects section img:hover {
-        transform: scale(1.05);
     }
 
     /*----------Assigment-------------*/
     .assignment h1 {
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        margin-bottom: 0;
         font-size: 35px;
         margin-top: 40px;
     }
@@ -734,16 +652,12 @@
     .assignment h2 {
         margin-top: 35px;
         margin-bottom: 40px;
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
         font-size: 25px;
 
     }
 
     .assignment h3 {
         margin-left: 20px;
-        /*text-align: center;*/
-        font-family: "Roboto Thin", sans-serif;
         font-size: 20px;
     }
 
@@ -763,44 +677,30 @@
         margin-left: 63px;
         margin-right: 70px;
     }
-
-    .assignment img:hover {
-        transform: scale(1.15);
-    }
-
     /*----------Contact Styles--------*/
     #contact > h1 {
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 0;
         font-size: 35px;
         margin-top: 60px;
     }
 
     #contact > div {
-        margin-top: 0px;
+        margin-top: 0;
         margin-left: 700px;
     }
 
     #details {
-        background-color: white;
         height: 430px;
         width: 730px;
-        position: relative;
-        box-shadow: rgba(252, 237, 4, 0.49) 0px 8px 24px;
         border-radius: 50px;
         margin-top: 70px;
         margin-left: 18px;
         z-index: 6;
     }
     #details > h3 {
-        text-align: left;
-        font-family: 'Roboto Thin', sans-serif;
         margin-bottom: 0;
         font-size: 25px;
         margin-top: 35px;
         margin-left: 100px;
-        position: absolute;
     }
 
     #details > h3:nth-child(2) {
@@ -813,10 +713,6 @@
     }
 
     #details > section > address > div {
-        text-align: left;
-        font-family: 'Roboto Thin', sans-serif;
-        margin-bottom: 0;
-        position: relative;
         top: 86px;
         font-size: 13px;
         margin-top: 31px;
@@ -824,26 +720,10 @@
         padding-top: 19px;
     }
 
-
-    #details > section > p:nth-child(1) {
-    }
-
     #details > section > div {
         height:267px;
         width: 24px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        position: absolute;
-        top: 78px;
         left: 34px;
-    }
-
-    #details > section > div > div {
-        height: 50px;
-        width: 50px;
-        background-color: #fced04;
-        border-radius: 100%;
     }
 
     #details > section > div > div > i {
@@ -855,77 +735,18 @@
 
     #details > section > div > div:nth-child(1) > i {
         font-size: 20px;
-        margin-left: 15px;
-        margin-top: 10px;
-        color: white;
     }
 
     #details > form {
-        position: absolute;
         left: 30%;
-        top: 0px;
-        transform: scale(.6);
     }
-
+    .contact__input {
+        width: 557px;
+    }
 
     /*----------footer Styles--------*/
-    footer {
-        position: relative;
-        width: 100vw;
-        height: 50px;
-        /*background-color: white;*/
-        z-index: 18;
-        top: -20px;
-    }
-
     footer > h3 {
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
-        margin-bottom: 0;
         font-size: 20px;
-        padding-top: 40px;
-        width: 100vw;
-    }
-
-    footer > div {
-        font-size: 40px;
-        /*height: 50px;*/
-        /*width : 50px;*/
-        /*position: relative;*/
-        line-height: 50px;
-    }
-
-    footer > div > i {
-        position: relative;
-        background-color: #fced04;
-        color: white;
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-        padding-top: 10px;
-        padding-left: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
-        top: 5px;
-        left: 40%;
-        transform: scale(.5);
-
-    }
-
-    footer > div > i:nth-child(2) {
-        position: relative;
-        background-color: #fced04;
-        text-align: center;
-        color: white;
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-        padding-top: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-left: 0px;
-        margin-right: 0px;
-
     }
 
     footer > div > i:nth-child(4) {
@@ -936,10 +757,6 @@
         border-radius: 100%;
         padding-top: 10px;
         padding-left: 10px;
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-
 
     }
 
