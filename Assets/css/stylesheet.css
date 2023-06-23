@@ -304,38 +304,35 @@ main{
     border-radius: 50%;
 }
 
-#education > section > div:nth-child(2){
+#education > section > div:nth-child(2){/*AL*/
     position: absolute;
     margin-top: 230px;
     left : 50%;
 }
-
-#education > section > div:nth-child(3){
-    position: absolute;
-    margin-top: 110px;
-    left : 10%;
-}
-
-#education > section > div:nth-child(4){
-    position: absolute;
-    margin-top: -95px;
-    left : 50%;
-}
-
 #edu1 > img{
     width: 650px;
     height: 650px;
 }
 
+#education > section > div:nth-child(3){/*OL*/
+    position: absolute;
+    margin-top: 110px;
+    left : 10%;
+}
 #edu2 > img{
     width: 650px;
     height: 650px;
 }
-
+#education > section > div:nth-child(4){/*IJSE*/
+    position: absolute;
+    margin-top: -95px;
+    left : 50%;
+}
 #edu3 > img{
     width: 650px;
     height: 650px;
 }
+
 .education section img:hover{
     transform: scale(1.05);
 }
