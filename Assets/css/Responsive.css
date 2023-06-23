@@ -246,12 +246,11 @@
         margin-top: 60px;
 
     }
-
     #skills > section > aside {
         height: 480px;
         width: 470px;
         border-radius: 10%;
-        left: 10px;
+        left: -29px;
     }
 
     #skills > section > aside > h2 {
@@ -1289,6 +1288,7 @@
         width: 335px;
         border-radius: 5%;
         left: 13px;
+        margin-top: 22px;
     }
     #skills > section > aside > h2 {
         font-size: 15px;
@@ -1571,8 +1571,8 @@
     }
     #about > article > ol {
         margin-top: -37px;
-        height: 61px;
-        width: 135px;
+        height: 64px;
+        width: 123px;
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 3px 5px;
     }
@@ -1637,10 +1637,11 @@
         margin-top: -262px;
     }
     #skills > section > aside {
-        height: 271px;
-        width: 335px;
+        height: 245px;
+        width: 292px;
         border-radius: 5%;
-        left: 13px;
+        left: 6px;
+        margin-top: 25px;
     }
     #skills > section > aside > h2 {
         font-size: 15px;
@@ -1688,14 +1689,15 @@
         margin-top: 31px;
     }
     .projects section img {
-        width: 120px;
-        height: 120px;
+        width: 102px;
+        height: 110px;
     }
     .projects section {
         gap: 6px;
         margin-left: 1px;
         margin-right: 100px;
         margin-top: 50px;
+
     }
     .projects h5 {
         font-size: 10px;
@@ -1750,10 +1752,10 @@
     }
     #details {
         height: 550px;
-        width: 336px;
+        width: 284px;
         border-radius: 50px;
         margin-top: 27px;
-        margin-left: 28px;
+        margin-left: 21px;
     }
     #details > h3:nth-child(2) {
         font-size: 18px;
