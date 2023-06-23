@@ -4,14 +4,36 @@ html{
 body{
     overflow-x: hidden;
 }
-body::-webkit-scrollbar{
 
+
+/* ------------- SCROLL BAR --------------- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+   background: rgba(0, 0, 0, 0.52);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: yellow;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #dac57b;
 }
 
 
+/*----------Header--------*/
+
 header{
     background: rgba(0, 0, 0, 0.73);
-    box-shadow: 0px -1px 8px 2px rgb(0, 0, 0);
+    box-shadow: 0 -1px 8px 2px rgb(0, 0, 0);
     position: fixed;
     width: 100%;
     top: 0;
@@ -48,8 +70,6 @@ header > nav > ul > li {
 header > nav >ul > li > a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    /*-webkit-text-stroke: 1px black;*/
-    /*font-family: sans; color: yellow;*/
 }
 
 header > nav > ul > li > a:hover{
@@ -82,10 +102,10 @@ main{
 .home{
     position : relative;
     margin-top: 0;
-    height: 790px;
+    height: 793px;
     width: 103%;
-    bottom: 22px;
-    background-image: url("../Assets/img/Backgrount1.jpg");
+    bottom: -3px;
+    background-image: url("../img/Backgrount1.jpg");
     background-size: cover;
 }
 #home > aside {
@@ -99,7 +119,6 @@ main{
     padding-top: 100px;
     padding-left: 1000px;
     background-size: cover;
-
 }
 
 #home > aside >h1{
@@ -110,13 +129,13 @@ main{
 
 #home > aside >h2{
     font-size: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     color: #f1f2f6;
 }
 
 #home > aside >h3{
     font-size: 30px;
-    margin-top:0px ;
+    margin-top:0;
     color: #f1f2f6;
 }
 
@@ -130,7 +149,7 @@ main{
     display: inline-block;
     border-radius: 16px;
     font-size: 25px;
-    box-shadow: rgba(252, 237, 4, 0.19) 0px 80px 40px -2px;
+    box-shadow: rgba(252, 237, 4, 0.19) 0 80px 40px -2px;
     margin-top:50px ;
     cursor: pointer;
     text-decoration: white;
@@ -166,7 +185,7 @@ main{
 }
 
 #home > aside > nav >i:hover {
-    box-shadow: rgba(241, 228, 6, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(241, 228, 6, 0.2) 0 7px 29px 0;
     transform: scale(1.05);
 }
 .anim{
@@ -199,11 +218,6 @@ main{
     margin-top:0;
 }
 
-/*#about > div{*/
-/*    margin-top: 0;*/
-/*    margin-left: 700px;*/
-/*}*/
-
 #about >img{
     padding-left: 50px;
     padding-top: 45px;
@@ -229,18 +243,18 @@ main{
     height: 200px;
     width: 450px;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0 5px 15px;
     border-radius: 40px;
 }
 
 #about > article > h2 {
     font-size: 38px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #about > article > h3 {
     font-size: 25px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 #about > article > p{
@@ -257,12 +271,6 @@ main{
     font-size: 50px;
     margin-top: 160px;
 }
-
-#education > div{
-    margin-top: 0px;
-    margin-left: 700px;
-}
-
 #education > section{
     height: 100vh;
     width: 98vw;
@@ -332,6 +340,8 @@ main{
     transform: scale(1.05);
 }
 
+
+
 /*----------Skill Styles--------*/
 
 #skills > h1{
@@ -340,13 +350,6 @@ main{
     margin-bottom: 0;
     font-size:50px;
     margin-top: 0px;
-}
-
-#skills > div{
-    margin-left: 800px;
-    width :3px;
-    height: 600px;
-    position: relative;
 }
 
 #skills >section {
@@ -425,6 +428,8 @@ main{
     transform: scale(1.05);
 }
 
+
+
 /*----------Projects Styles--------*/
 #projects > h1{
     text-align: center;
@@ -459,6 +464,9 @@ main{
 .projects section img:hover{
     transform: scale(1.05);
 }
+
+
+
 
 /*----------Assigment-------------*/
 .assignment h1{
@@ -511,6 +519,10 @@ main{
 .assignment img:hover{
     transform: scale(1.15);
 }
+
+
+
+
 /*----------Contact Styles--------*/
 
 #contact > h1{
@@ -537,15 +549,6 @@ main{
     margin-left: 80px;
     z-index: 6;
 }
-
-/*#bg1{*/
-/*    background-color: #fced04;*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    top:4350px;*/
-/*    height: 380px;*/
-/*    z-index: 5;*/
-/*}*/
 
 #details > h3{
     text-align: left;
@@ -576,10 +579,6 @@ main{
     margin-top: 35px;
     margin-left: 150px;
     padding-top: 20px;
-}
-
-
-#details > section > p:nth-child(1){
 }
 
 #details > section > div{
@@ -700,10 +699,11 @@ main{
     animation-delay: 7s;
 }
 
-
 #submitbtn:hover{
     transform: scale(1.05);
 }
+
+
 
 /*----------footer Styles--------*/
 footer{
@@ -732,7 +732,7 @@ footer > div{
     line-height: 50px;
 }
 
-footer> div >i{
+footer> div >i>a{
     position: relative;
     background-color: #fced04;
     color:white;
@@ -749,7 +749,7 @@ footer> div >i{
 
 }
 
-footer> div >i:nth-child(2){
+footer> div >i>a:nth-child(2){
     position: relative;
     background-color: #fced04;
     text-align: center;
@@ -765,7 +765,7 @@ footer> div >i:nth-child(2){
 
 }
 
-footer> div >i:nth-child(4){
+footer> div >i>a:nth-child(4){
     position: relative;
     color:white;
     width: 60px;
@@ -779,7 +779,8 @@ footer> div >i:nth-child(4){
 
 }
 
-footer> div >i:hover{
+footer> div >i>a:hover{
     transform: scale(1.2);
     box-shadow: rgba(227, 200, 73, 0.55) 0px 7px 29px 0px;
 }
+
