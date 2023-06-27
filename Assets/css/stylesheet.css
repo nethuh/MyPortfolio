@@ -119,6 +119,7 @@ main{
     padding-top: 100px;
     padding-left: 1000px;
     background-size: cover;
+    position: relative;
 }
 
 #home > aside >h1{
