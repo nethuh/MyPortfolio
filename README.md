@@ -20,11 +20,11 @@
 * 🔗 <a href="https://drive.google.com/file/d/1YSwgcx6tvocXONToetn3vWd00Q5zJo-1/view?usp=sharing" target="_blank">Wire-Frame</a>
 
 * 🔗 <a href="https://www.figma.com/file/hOniXL1SIKuPCXaRrKs7wC/MockUp?node-id=0%3A1&t=Ad2WOl6AaR11LMsI-1" target="_blank">Mock-Up</a>
-<<<<<<< HEAD
-=======
+
+
 <h3>Deployment</h3>
 GitHub Pages :https://nethuh.github.io/MyPortfolio/ <br>
->>>>>>> 116cf562592688da38c43ad2344a9cbd7ee3bfe4
+
 
 <h3> Web POS Using CSS FrameWorks</h3>
 
