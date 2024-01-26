@@ -158,10 +158,10 @@ $('#customerUpdated-btn').click(function(){
             showConfirmButton: false,
             timer: 1500
         });
-        /*$('#txtCustId').val('')
+        $('#txtCustId').val('')
         $('#txtCustName').val('')
         $('#txtCustAddress').val('')
-        $('#txtCustSalary').val('')*/
+        $('#txtCustSalary').val('')
 
         clear();
     }
