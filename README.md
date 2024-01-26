@@ -15,7 +15,7 @@
 
 * 🔗 <a href="https://www.figma.com/file/hOniXL1SIKuPCXaRrKs7wC/MockUp?node-id=0%3A1&t=Ad2WOl6AaR11LMsI-1" target="_blank">Mock-Up</a>
 <h3>Deployment</h3>
-GitHub Pages :https://github.com/nethuh/MyPortfolio <br>
+GitHub Pages :https://nethuh.github.io/MyPortfolio/ <br>
 
 <h3> Web POS Using CSS FrameWorks</h3>
 
